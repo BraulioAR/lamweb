@@ -98,23 +98,23 @@ export default function RootLayout({
         <header className='flex flex-row justify-between items-center text-white'>
           <div className='mx-auto max-w-7xl'>
             <div className='flex items-center sm:justify-between gap-x-2 lg:gap-x-4'>
-              <Link className={`${tinos.className} text-black lg:px-3 py-5 cursor-pointer text-sm lg:text-md hover:scale-105 hover:text-indigo-100 transition:fill 0.3s`}
+              <Link className={`${tinos.className} text-black lg:px-3 py-5 cursor-pointer text-sm lg:text-xl hover:scale-105 hover:text-indigo-100 transition:fill 0.3s`}
                 href="/"
                 rel="noopener noreferrer">Inicio</Link>
-              <Link className={`${tinos.className} text-black lg:px-3 py-5 cursor-pointer text-sm lg:text-md hover:scale-105 hover:text-indigo-100 transition:fill 0.3s`}
+              <Link className={`${tinos.className} text-black lg:px-3 py-5 cursor-pointer text-sm lg:text-xl hover:scale-105 hover:text-indigo-100 transition:fill 0.3s`}
                 href="/#contact"
                 rel="noopener noreferrer">Contacto</Link>
-              <Link className={`${tinos.className} text-black lg:px-3 py-5 cursor-pointer text-sm lg:text-md hover:scale-105 hover:text-indigo-100 transition:fill 0.3s`}
+              <Link className={`${tinos.className} text-black lg:px-3 py-5 cursor-pointer text-sm lg:text-xl hover:scale-105 hover:text-indigo-100 transition:fill 0.3s`}
                 href="/acercaDe"
                 rel="noopener noreferrer">Acerca de</Link>
-              <Link className={`${tinos.className} text-black lg:px-3 py-5 cursor-pointer text-sm lg:text-md hover:scale-105 hover:text-indigo-100 transition:fill 0.3s`}
+              <Link className={`${tinos.className} text-black lg:px-3 py-5 cursor-pointer text-sm lg:text-xl hover:scale-105 hover:text-indigo-100 transition:fill 0.3s`}
                 href="/#servicios"
                 rel="noopener noreferrer">Servicios</Link>
-              <Link className={`${tinos.className} text-black lg:px-3 py-5 cursor-pointer text-sm lg:text-md hover:scale-105 hover:text-indigo-100 transition:fill 0.3s`}
-                href="#home"
+              <Link className={`${tinos.className} text-black lg:px-3 py-5 cursor-pointer text-sm lg:text-xl hover:scale-105 hover:text-indigo-100 transition:fill 0.3s`}
+                href="/blog"
                 rel="noopener noreferrer">Blog</Link>
-              <Link className={`${tinos.className} text-black lg:px-3 py-5 cursor-pointer text-sm lg:text-md hover:scale-105 hover:text-indigo-100 transition:fill 0.3s`}
-                href="#home"
+              <Link className={`${tinos.className} text-black lg:px-3 py-5 cursor-pointer text-sm lg:text-xl hover:scale-105 hover:text-indigo-100 transition:fill 0.3s`}
+                href="/portafolio"
                 rel="noopener noreferrer">Portafolio</Link>
             </div>
           </div>

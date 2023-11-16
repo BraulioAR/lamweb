@@ -65,14 +65,14 @@ export default function Page() {
       </section>
       <section id='team' className='flex w-screen flex-col h-full bg-white bg-cover'>
         <div className='mx-auto max-w-7xl'>
-          <div className='py-4 flex flex-col h-auto mx-4'>
+          <div className='py-4 lg:py-12 flex flex-col h-auto mx-4'>
             <h1 className={`${tinos.className} text-center text-black text-6xl lg:text-[5rem] border-b border-black border-opacity-20`}>
               Conoce al #TEAMLAM
             </h1>
             <h3 className={`${tinos.className} text-center text-black text-4xl lg:text-[3rem]`}>Solo somos un grupo de gente creativa, ¡fundiendo cada día!</h3>
           </div>
-          <div className='flex flex-col lg:flex-row gap-8 mx-4 lg:mx-56 items-center'>
-            <div className='flex flex-col bg-indigo-200 h-auto lg:h-[60vh] pb-4 w-auto lg:w-[42vh] gap-[2vh] rounded-3xl hover:scale-105 transition-transform'>
+          <div className='flex flex-col lg:flex-row gap-8 mx-4 items-center lg:pb-8'>
+            <div className='flex flex-col bg-indigo-200 h-auto lg:h-[65vh] pb-4 w-auto lg:w-[80vh] gap-[2vh] rounded-3xl hover:scale-105 transition-transform'>
               <div>
                 <Image alt='Jenny TM1'
                   src='/Jenny.webp'
@@ -80,18 +80,18 @@ export default function Page() {
                   height={329}
                   className='rounded-[1rem]' />
               </div>
-              <div className='flex flex-col gap-[2.5vh] ml-6'>
+              <div className='flex flex-col ml-6'>
 
                 <h3 className={`${tinos.className} text-black text-[1rem]`}>Experta en redes sociales</h3>
 
 
-                <h2 className={`${tinos.className} font-bold text-black text-[1.5rem] mt-[-1.5rem]`}>Jenny Sánchez</h2>
+                <h2 className={`${tinos.className} font-bold text-black text-[1.5rem] `}>Jenny Sánchez</h2>
 
 
-                <h3 className={`${tinos.className} text-black text-[1rem]`}>Add a short bio for each team member. Make it brief and informative to keep visitors engaged.</h3>
+                <h3 className={`${tinos.className} text-black text-[1rem] mt-3`}>Construyó los cimientos de nuestra trayectoria. Apasionada por la tecnología y comprometida con resultados excepcionales, Jenny fusiona su habilidad técnica con un enfoque orientado al cliente. ¡Descubre el mundo luminoso de Lights and Media con Jenny a la cabeza!</h3>
 
               </div>
-              <div className='flex flex-row gap-[2vh] ml-7 mt-4 lg:mt-7'>
+              <div className='flex flex-row gap-[2vh] ml-7 '>
                 <a
                   href="https://www.instagram.com/lightsandmedialam/"
                   target="_blank"
@@ -115,7 +115,7 @@ export default function Page() {
                 </a>
               </div>
             </div>
-            <div className='flex flex-col bg-indigo-200 pb-4 w-auto lg:h-[60vh] lg:w-[42vh] gap-[2vh] rounded-3xl hover:scale-105 transition-transform'>
+            <div className='flex flex-col bg-indigo-200 pb-4 w-auto lg:h-[65vh] lg:w-[80vh] gap-[2vh] rounded-3xl hover:scale-105 transition-transform'>
               <div>
                 <Image alt='Gabriella TM1'
                   src='/Gabriella.webp'
@@ -123,18 +123,18 @@ export default function Page() {
                   height={329}
                   className='rounded-[1rem]' />
               </div>
-              <div className='flex flex-col gap-[2.5vh] ml-6'>
+              <div className='flex flex-col  ml-6'>
 
                 <h3 className={`${tinos.className} text-black text-[1rem]`}>Diseñadora gráfica y página web</h3>
 
 
-                <h2 className={`${tinos.className} font-bold text-black text-[1.5rem] mt-[-1.5rem]`}>Gabriella Soriano</h2>
+                <h2 className={`${tinos.className} font-bold text-black text-[1.5rem] `}>Gabriella Soriano</h2>
 
 
-                <h3 className={`${tinos.className} text-black text-[1rem]`}>Add a short bio for each team member. Make it brief and informative to keep visitors engaged.</h3>
+                <h3 className={`${tinos.className} text-black text-[1rem] mt-2`}>Desde la creación de impactantes elementos gráficos hasta el diseño de páginas web envolventes, su habilidad artística y conocimiento técnico se unen para ofrecer proyectos visualmente impactantes y funcionalmente sólidos. ¡Explora el arte y la innovación con Gabriella Soriano!</h3>
 
               </div>
-              <div className='flex flex-row gap-[2vh] ml-7 mt-4 lg:mt-7'>
+              <div className='flex flex-row gap-[2vh] ml-7 mt-2'>
                 <a
                   href="https://www.instagram.com/lightsandmedialam/"
                   target="_blank"
@@ -158,7 +158,7 @@ export default function Page() {
                 </a>
               </div>
             </div>
-            <div className='flex flex-col bg-indigo-200 pb-4 w-auto lg:h-[60vh] lg:w-[42vh] gap-[2vh] rounded-3xl hover:scale-105 transition-transformhover:scale-105 transition-transform'>
+            <div className='flex flex-col bg-indigo-200 pb-4 w-auto lg:h-[65vh] lg:w-[80vh] gap-[2vh] rounded-3xl hover:scale-105 transition-transformhover:scale-105 transition-transform'>
               <div>
                 <Image alt='Shade'
                   src='/Shade.webp'
@@ -166,18 +166,18 @@ export default function Page() {
                   height={329}
                   className='rounded-[1rem]' />
               </div>
-              <div className='flex flex-col gap-[2.5vh] ml-6'>
+              <div className='flex flex-col ml-6'>
 
                 <h3 className={`${tinos.className} text-black text-[1rem]`}>Creadora de multimedia</h3>
 
 
-                <h2 className={`${tinos.className} font-bold text-black bottom-1 text-[1.5rem] mt-[-1.5rem]`}>Shade González</h2>
+                <h2 className={`${tinos.className} font-bold text-black bottom-1 text-[1.5rem] `}>Shade González</h2>
 
 
-                <h3 className={`${tinos.className} text-black text-[1rem]`}>Add a short bio for each team member. Make it brief and informative to keep visitors engaged.</h3>
+                <h3 className={`${tinos.className} text-black text-[1rem] mt-2`}>Destaca por su habilidad para combinar arte y tecnología, creando experiencias visuales únicas. Su enfoque innovador da vida a proyectos cautivadores, desde diseño gráfico hasta elementos multimedia. Shade redefine la creatividad digital, invitándote a explorar un mundo visualmente impactante.</h3>
 
               </div>
-              <div className='flex flex-row gap-[2vh] ml-7 mt-4 lg:mt-7'>
+              <div className='flex flex-row gap-[2vh] ml-7 mt-2'>
                 <a
                   href="https://www.instagram.com/lightsandmedialam/"
                   target="_blank"
@@ -204,7 +204,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id='servicios' className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-300 via-blue-100 to-white h-full'>
+      <section id='servicios' className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-300 via-blue-100 to-white h-full lg:pb-8'>
         <div className='mx-auto max-w-7xl'>
           <div className='flex justify-center items-center'>
             <h1 className={`${tinos.className} text-center text-black text-5xl lg:text-[5rem] pt-5 pb-5`}>Servicios para tu presencia digital</h1>
@@ -350,7 +350,7 @@ export default function Page() {
           <div className='flex justify-center items-center'>
             <h1 className={`${tinos.className} text-center text-black text-5xl lg:text-[5rem] py-5`}>Cualidades según nuestros clientes</h1>
           </div>
-          <div className='flex flex-col lg:flex-row justify-between lg:mx-32'>
+          <div className='flex flex-col lg:flex-row justify-between'>
             <div className=' flex flex-col justify-start items-start'>
               <h1 className={`${tinos.className} text-green-950 text-[3rem]`}>01.</h1>
               <h3 className={`${tinos.className} text-black text-[1.25rem]`}>Creatividad ante todo.</h3>
