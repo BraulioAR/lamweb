@@ -1,15 +1,90 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+
 import './globals.css'
 import Link from 'next/link'
-import Image from 'next/image';
+import { tinos } from './fonts'
 
-const inter = Inter({ subsets: ['latin'] })
 
-export const metadata: Metadata = {
+interface MyMetadata extends Metadata {
+  extra?: {
+    [key: string]: any;
+  };
+}
+
+export const metadata: MyMetadata = {
   title: 'Lights and Media',
   description: 'Social Media Agency',
-}
+  extra: {
+    keywords: 'social media, marketing, agency, agencia, redes sociales, asesoría',
+  },
+  icons: [
+    {
+      sizes: '57x57',
+      href: 'icons/apple-icon-57x57.png',
+      url: 'icons/apple-icon-57x57.png',
+    },
+    {
+      sizes: '60x60',
+      href: 'icons/apple-icon-60x60.png',
+      url: 'icons/apple-icon-60x60.png',
+    },
+    {
+      sizes: '72x72',
+      href: 'icons/apple-icon-72x72.png',
+      url: 'icons/apple-icon-72x72.png',
+    },
+    {
+      sizes: '76x76',
+      href: 'icons/apple-icon-76x76.png',
+      url: 'icons/apple-icon-76x76.png',
+    },
+    {
+      sizes: '114x114',
+      href: 'icons/apple-icon-114x114.png',
+      url: 'icons/apple-icon-114x114.png',
+    },
+    {
+      sizes: '120x120',
+      href: 'icons/apple-icon-120x120.png',
+      url: 'icons/apple-icon-120x120.png',
+    },
+    {
+      sizes: '144x144',
+      href: 'icons/apple-icon-144x144.png',
+      url: 'icons/apple-icon-144x144.png',
+    },
+    {
+      sizes: '152x152',
+      href: 'icons/apple-icon-152x152.png',
+      url: 'icons/apple-icon-152x152.png',
+    },
+    {
+      sizes: '180x180',
+      href: 'icons/apple-icon-180x180.png',
+      url: 'icons/apple-icon-180x180.png',
+    },
+    {
+      sizes: '192x192',
+      href: 'icons/android-icon-192x192.png',
+      url: 'icons/android-icon-192x192.png',
+    },
+    {
+      sizes: '32x32',
+      href: 'icons/favicon-32x32.png',
+      url: 'icons/favicon-32x32.png',
+    },
+    {
+      sizes: '96x96',
+      href: 'icons/favicon-96x96.png',
+      url: 'icons/favicon-96x96.png',
+    },
+    {
+      sizes: '16x16',
+      href: 'icons/favicon-16x16.png',
+      url: 'icons/favicon-16x16.png',
+    },
+  ],
+};
 
 export default function RootLayout({
   children,
@@ -17,36 +92,28 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="es">
 
-      <body className={inter.className}>
-        <header className='flex flex-row justify-between items-center text-white ml-5 mr5 '>
+      <body className={tinos.className}>
+        <header className='flex flex-row justify-between items-center text-white'>
           <div className='mx-auto max-w-7xl'>
-            <div className='py-5 sm: hidden'>
-              <Image
-                alt="LAM Logo"
-                src="/LAM-logo.png"
-                width={120}
-                height={150}
-              />
-            </div>
-            <div className='flex items-center sm:justify-between gap-x-3'>
-              <Link className='text-black lg:px-3 py-5 cursor-pointer text-md hover:scale-105 hover:text-indigo-100 transition:fill 0.3s'
+            <div className='flex items-center sm:justify-between gap-x-2 lg:gap-x-4'>
+              <Link className={`${tinos.className} text-black lg:px-3 py-5 cursor-pointer text-sm lg:text-md hover:scale-105 hover:text-indigo-100 transition:fill 0.3s`}
                 href="/"
                 rel="noopener noreferrer">Inicio</Link>
-              <Link className='text-black lg:px-3 py-5 cursor-pointer text-md hover:scale-105 hover:text-indigo-100 transition:fill 0.3s'
+              <Link className={`${tinos.className} text-black lg:px-3 py-5 cursor-pointer text-sm lg:text-md hover:scale-105 hover:text-indigo-100 transition:fill 0.3s`}
                 href="/#contact"
                 rel="noopener noreferrer">Contacto</Link>
-              <Link className='text-black lg:px-3 py-5 cursor-pointer text-md hover:scale-105 hover:text-indigo-100 transition:fill 0.3s'
+              <Link className={`${tinos.className} text-black lg:px-3 py-5 cursor-pointer text-sm lg:text-md hover:scale-105 hover:text-indigo-100 transition:fill 0.3s`}
                 href="/acercaDe"
                 rel="noopener noreferrer">Acerca de</Link>
-              <Link className='text-black lg:px-3 py-5 cursor-pointer text-md hover:scale-105 hover:text-indigo-100 transition:fill 0.3s'
+              <Link className={`${tinos.className} text-black lg:px-3 py-5 cursor-pointer text-sm lg:text-md hover:scale-105 hover:text-indigo-100 transition:fill 0.3s`}
                 href="/#servicios"
                 rel="noopener noreferrer">Servicios</Link>
-              <Link className='text-black lg:px-3 py-5 cursor-pointer text-md hover:scale-105 hover:text-indigo-100 transition:fill 0.3s'
+              <Link className={`${tinos.className} text-black lg:px-3 py-5 cursor-pointer text-sm lg:text-md hover:scale-105 hover:text-indigo-100 transition:fill 0.3s`}
                 href="#home"
                 rel="noopener noreferrer">Blog</Link>
-              <Link className='text-black lg:px-3 py-5 cursor-pointer text-md hover:scale-105 hover:text-indigo-100 transition:fill 0.3s'
+              <Link className={`${tinos.className} text-black lg:px-3 py-5 cursor-pointer text-sm lg:text-md hover:scale-105 hover:text-indigo-100 transition:fill 0.3s`}
                 href="#home"
                 rel="noopener noreferrer">Portafolio</Link>
             </div>
@@ -69,7 +136,7 @@ export default function RootLayout({
             </nav>
           </div>
           <div className='flex justify-center'>
-            <p className="flex items-center text-sm">
+            <p className="flex items-center text-sm text-center">
               &copy; 2023  Lights and Media | Developed by Braulio A. Rosario.
             </p>
           </div>

@@ -22,7 +22,7 @@ export default function Page() {
                     ></Image>
                 </div>
                 <div className={`bg-black`}>
-                    <div className='flex flex-col mx-32'>
+                    <div className='flex flex-col mx-32 jus'>
                         <h2 className={`${tinos.className} text-white text-[1.75rem] text-center px-8 pb-12 pt-12`}>Con este proyecto buscamos promover el trabajo con <span className={`${tinos.className} text-indigo-300 text-[2.25rem]`}>pasión</span>, destacando la <span className={`${tinos.className} text-indigo-300 text-[2.25rem]`}>responsabilidad</span> y autenticidad de cada marca y plasmarlas en la mente de los demás, de forma en que sean <span className={`${tinos.className} text-indigo-300 text-[2.25rem]`}>recordadas</span>.</h2>
                         <h2 className={`${tinos.className} text-white text-[1.75rem] text-center px-8 pb-12 pt-12`}>Listo para empezar tu nueva travesía digital?</h2>
                     </div>

@@ -31,6 +31,7 @@ export default function Page() {
   }, []);
 
   return (
+
     <main>
       <section id='home' className="flex flex-row h-[80vh] w-full">
         <video className='absolute top-30 left-0 w-full h-full object-cover z-0' autoPlay muted loop>
@@ -54,9 +55,9 @@ export default function Page() {
         </video>
         <div className='mx-auto max-w-7xl z-10 flex items-center justify-center'>
           <div className=" bg-[url('/bg-title2.webp')] bg-center lg:w-[75%] lg:h-auto w-[80%] h-[72%] rounded-3xl">
-            <div className='flex m-7 mx-auto p-2 justify-center lg:justify-baseline lg:m-[8vh] lg:pt-52 '>
-              <h1 className={`${tinos.className} italic text-white text-[3rem]`}>
-                Deja que las redes sociales hablen de ti. <span className={`${tinos.className} text-white bg-black text-[3rem]`}>Nosotros</span> les daremos algo que <span className={`${tinos.className}  text-white bg-black text-[3rem]`}>decir</span>.
+            <div className='flex m-2 mx-auto p-2 justify-center lg:justify-baseline lg:m-[8vh] lg:pt-52 items-center '>
+              <h1 className={`${tinos.className} italic text-white text-5xl lg:text-[3rem]`}>
+                Deja que las redes sociales hablen de ti. <span className={`${tinos.className} text-white bg-black text-6xl lg:text-[3rem]`}>Nosotros</span> les daremos algo que <span className={`${tinos.className}  text-white bg-black text-6xl lg:text-[3rem]`}>decir</span>.
               </h1>
             </div>
           </div>
@@ -70,8 +71,8 @@ export default function Page() {
             </h1>
             <h3 className={`${tinos.className} text-center text-black text-4xl lg:text-[3rem]`}>Solo somos un grupo de gente creativa, ¡fundiendo cada día!</h3>
           </div>
-          <div className='flex flex-col lg:flex-row gap-8 mx-4 lg:mx-56'>
-            <div className='flex flex-col bg-indigo-200 h-[60vh] w-[42vh] gap-[2vh] rounded-3xl hover:scale-105 transition-transform'>
+          <div className='flex flex-col lg:flex-row gap-8 mx-4 lg:mx-56 items-center'>
+            <div className='flex flex-col bg-indigo-200 h-auto lg:h-[60vh] pb-4 w-auto lg:w-[42vh] gap-[2vh] rounded-3xl hover:scale-105 transition-transform'>
               <div>
                 <Image alt='Jenny TM1'
                   src='/Jenny.webp'
@@ -90,7 +91,7 @@ export default function Page() {
                 <h3 className={`${tinos.className} text-black text-[1rem]`}>Add a short bio for each team member. Make it brief and informative to keep visitors engaged.</h3>
 
               </div>
-              <div className='flex flex-row gap-[2vh] ml-7 mt-7'>
+              <div className='flex flex-row gap-[2vh] ml-7 mt-4 lg:mt-7'>
                 <a
                   href="https://www.instagram.com/lightsandmedialam/"
                   target="_blank"
@@ -114,7 +115,7 @@ export default function Page() {
                 </a>
               </div>
             </div>
-            <div className='flex flex-col bg-indigo-200 h-[60vh] w-[42vh] gap-[2vh] rounded-3xl hover:scale-105 transition-transform'>
+            <div className='flex flex-col bg-indigo-200 pb-4 w-auto lg:h-[60vh] lg:w-[42vh] gap-[2vh] rounded-3xl hover:scale-105 transition-transform'>
               <div>
                 <Image alt='Gabriella TM1'
                   src='/Gabriella.webp'
@@ -133,7 +134,7 @@ export default function Page() {
                 <h3 className={`${tinos.className} text-black text-[1rem]`}>Add a short bio for each team member. Make it brief and informative to keep visitors engaged.</h3>
 
               </div>
-              <div className='flex flex-row gap-[2vh] ml-7 mt-7'>
+              <div className='flex flex-row gap-[2vh] ml-7 mt-4 lg:mt-7'>
                 <a
                   href="https://www.instagram.com/lightsandmedialam/"
                   target="_blank"
@@ -157,7 +158,7 @@ export default function Page() {
                 </a>
               </div>
             </div>
-            <div className='flex flex-col bg-indigo-200 h-[60vh] w-[42vh] gap-[2vh] rounded-3xl hover:scale-105 transition-transformhover:scale-105 transition-transform'>
+            <div className='flex flex-col bg-indigo-200 pb-4 w-auto lg:h-[60vh] lg:w-[42vh] gap-[2vh] rounded-3xl hover:scale-105 transition-transformhover:scale-105 transition-transform'>
               <div>
                 <Image alt='Shade'
                   src='/Shade.webp'
@@ -176,7 +177,7 @@ export default function Page() {
                 <h3 className={`${tinos.className} text-black text-[1rem]`}>Add a short bio for each team member. Make it brief and informative to keep visitors engaged.</h3>
 
               </div>
-              <div className='flex flex-row gap-[2vh] ml-7 mt-7'>
+              <div className='flex flex-row gap-[2vh] ml-7 mt-4 lg:mt-7'>
                 <a
                   href="https://www.instagram.com/lightsandmedialam/"
                   target="_blank"
@@ -378,13 +379,13 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id='contact' className='bg-gradient-to-b from-white via-gray-200 to-gray-300 h-[70vh]'>
-        <div className='mx-auto max-w-7xl'>
-          <div className='flex flex-col h-[50%]'>
-            <div className='flex content-center justify-center mt-[10vh]'>
-              <h1 className={`${tinos.className} text-[5rem] text-black`}>Vamo&apos; a eto!</h1>
+      <section id='contact' className='bg-gradient-to-b from-white via-gray-200 to-gray-300 h-auto lg:h-[70vh]'>
+        <div className='mx-auto max-w-7xl '>
+          <div className='flex flex-col h-full gap-12'>
+            <div className='flex content-center justify-center mt-12 lg:mt-[10vh]'>
+              <h1 className={`${tinos.className} text-center text-[5rem] text-black`}>Vamo&apos; a eto!</h1>
             </div>
-            <div className='flex flex-col items-center mt-[10vh] gap-[2.5rem]'>
+            <div className='flex flex-col items-center lg:mt-[10vh] gap-[2.5rem]'>
               <form name="contactus" action='/contactus' method='post'>
                 <input required type='hidden' name='form-name' value='contactus' />
                 <div className="flex flex-row gap-[1.25rem]">
