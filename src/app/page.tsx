@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import { tinos } from './fonts'
 import Link from 'next/link'
-import { Suspense, useEffect } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 
 
 export default function Page() {
@@ -30,6 +30,26 @@ export default function Page() {
     });
   }, []);
 
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      if (entries[0].intersectionRatio >= 0) {
+        setIsVisible(true);
+      }
+    }, {
+      root: document.querySelector('#team'),
+      threshold: 0,
+    });
+
+    const element = document.querySelector('.animate-fade-left'); // Use optional chaining
+    if (element) {
+      observer.observe(element); // Observe the element only if it exists
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
 
     <main>
@@ -38,7 +58,7 @@ export default function Page() {
           <source src='/file1.mp4' type='video/mp4'></source>
         </video>
         <div className='mx-auto max-w-7xl z-10'>
-          <div className=' flex justify-center items-center w-full h-full '>
+          <div className=' animate-fade animate-duration-[1500ms] flex justify-center items-center w-full h-full '>
             <Image
               className='hover:scale-95 transition-transform'
               src='/aaaa.webp'
@@ -54,44 +74,44 @@ export default function Page() {
           <source src='/file.mp4' type='video/mp4'></source>
         </video>
         <div className='mx-auto max-w-7xl z-10 flex items-center justify-center'>
-          <div className=" bg-[url('/bg-title2.webp')] bg-center lg:w-[75%] lg:h-auto w-[80%] h-[72%] rounded-3xl">
-            <div className='flex m-2 mx-auto p-2 justify-center lg:justify-baseline lg:m-[8vh] lg:pt-52 items-center '>
-              <h1 className={`${tinos.className} italic text-white text-5xl lg:text-[3rem]`}>
-                Deja que las redes sociales hablen de ti. <span className={`${tinos.className} text-white bg-black text-6xl lg:text-[3rem]`}>Nosotros</span> les daremos algo que <span className={`${tinos.className}  text-white bg-black text-6xl lg:text-[3rem]`}>decir</span>.
+          <div className="w-[50%] h-[72%]">
+            <div className='flex m-2 mx-auto p-2 justify-center lg:justify-baseline lg:m-[8vh] lg:pt-16 items-center '>
+              <h1 className={`${tinos.className}  text-white text-5xl lg:text-[2.75rem] leading-normal`}>
+                &#34;Deja que las redes sociales hablen de ti. <span className={`${tinos.className} text-white bg-black text-6xl lg:text-[3rem]`}>Nosotros</span> les daremos algo que <span className={`${tinos.className}  text-white bg-black text-6xl lg:text-[3rem]`}>decir</span>.&#34;
               </h1>
             </div>
           </div>
         </div>
       </section>
-      <section id='team' className='flex w-screen flex-col h-full bg-white bg-cover'>
+      <section id='team' className='flex w-screen flex-col h-full p-12 bg-black bg-cover '>
         <div className='mx-auto max-w-7xl'>
-          <div className='py-4 lg:py-12 flex flex-col h-auto mx-4'>
-            <h1 className={`${tinos.className} text-center text-black text-6xl lg:text-[5rem] border-b border-black border-opacity-20`}>
+          <div className={`py-4 lg:py-12 flex flex-col h-auto mx-4 animate-duration-[1500ms] ${isVisible ? 'animate-fade-left' : ''}`}>
+            <h1 className={`${tinos.className}  text-center text-white text-6xl lg:text-[3.75rem]`}>
               Conoce al #TEAMLAM
             </h1>
-            <h3 className={`${tinos.className} text-center text-black text-4xl lg:text-[3rem]`}>Solo somos un grupo de gente creativa, ¡fundiendo cada día!</h3>
+            <h3 className={`${tinos.className} text-center text-white text-4xl mt-8 lg:text-[1.25rem]`}>Solo somos un grupo de gente creativa, ¡fundiendo cada día!</h3>
           </div>
           <div className='flex flex-col lg:flex-row gap-8 mx-4 items-center lg:pb-8'>
-            <div className='flex flex-col bg-indigo-200 h-auto lg:h-[65vh] pb-4 w-auto lg:w-[80vh] gap-[2vh] rounded-3xl hover:scale-105 transition-transform'>
+            <div className='hover:shadow-custom flex flex-col bg-indigo-200 h-auto lg:h-[78vh] pb-4 w-auto lg:w-[80vh] gap-[2vh] rounded-3xl hover:scale-105 transition-transform overflow-hidden'>
               <div>
                 <Image alt='Jenny TM1'
                   src='/Jenny.webp'
                   width={403}
                   height={329}
-                  className='rounded-[1rem]' />
+                />
               </div>
-              <div className='flex flex-col ml-6'>
+              <div className='flex flex-col px-8'>
 
-                <h3 className={`${tinos.className} text-black text-[1rem]`}>Experta en redes sociales</h3>
+                <div>
+                <h2 className={`${tinos.className} font-bold text-black text-[1.5rem]`}>Jenny Sánchez</h2>
 
-
-                <h2 className={`${tinos.className} font-bold text-black text-[1.5rem] `}>Jenny Sánchez</h2>
-
-
-                <h3 className={`${tinos.className} text-black text-[1rem] mt-3`}>Construyó los cimientos de nuestra trayectoria. Apasionada por la tecnología y comprometida con resultados excepcionales, Jenny fusiona su habilidad técnica con un enfoque orientado al cliente. ¡Descubre el mundo luminoso de Lights and Media con Jenny a la cabeza!</h3>
-
+                <h3 className={`${tinos.className} text-black text-[1rem] mt-[-0.5rem]`}>Lic. Comunicación Social. Experta en redes sociales.</h3>
+                </div>
+                <div className='mt-9 '>
+                  <h3 className={`${tinos.className} text-black text-[1rem] leading-6`}>¡Hola!, Soy Jenny Sánchez, me encargo de crear todo un mundo digital, dónde brindo mis conocimientos de  medios digitales y tradicionales, ya que mi pasión es comunicar de manera que las marcas sean recordadas.<br/><br/><br/>¡Ya es hora de expandir tu negocio a nuevos horizontes!</h3>
+                </div>
               </div>
-              <div className='flex flex-row gap-[2vh] ml-7 '>
+              <div className='flex flex-row gap-[2vh] ml-7 mt-3'>
                 <a
                   href="https://www.instagram.com/lightsandmedialam/"
                   target="_blank"
@@ -115,26 +135,26 @@ export default function Page() {
                 </a>
               </div>
             </div>
-            <div className='flex flex-col bg-indigo-200 pb-4 w-auto lg:h-[65vh] lg:w-[80vh] gap-[2vh] rounded-3xl hover:scale-105 transition-transform'>
+            <div className='hover:shadow-custom flex flex-col bg-indigo-200 pb-4 w-auto lg:h-[78vh] lg:w-[80vh] gap-[2vh] rounded-3xl hover:scale-105 transition-transform overflow-hidden'>
               <div>
                 <Image alt='Gabriella TM1'
                   src='/Gabriella.webp'
                   width={403}
                   height={329}
-                  className='rounded-[1rem]' />
+                   />
               </div>
-              <div className='flex flex-col  ml-6'>
-
-                <h3 className={`${tinos.className} text-black text-[1rem]`}>Diseñadora gráfica y página web</h3>
-
-
-                <h2 className={`${tinos.className} font-bold text-black text-[1.5rem] `}>Gabriella Soriano</h2>
-
-
-                <h3 className={`${tinos.className} text-black text-[1rem] mt-2`}>Desde la creación de impactantes elementos gráficos hasta el diseño de páginas web envolventes, su habilidad artística y conocimiento técnico se unen para ofrecer proyectos visualmente impactantes y funcionalmente sólidos. ¡Explora el arte y la innovación con Gabriella Soriano!</h3>
-
+              <div className='flex flex-col px-8'>
+                <div>
+                <h2 className={`${tinos.className} font-bold text-black text-[1.5rem]`}>Gabriella Soriano</h2>
+                <h3 className={`${tinos.className} text-black text-[1rem]  mt-[-0.5rem]`}>Lic. Comunicación Digtial; Diseñadora gráfica y página web.</h3>
+                </div>
+                <div className='mt-7'>
+                <h3 className={`${tinos.className} text-black text-[1rem]`}>¡Me encanta crear! de hecho, tal vez sea una de las personas más creativas que conocerás.
+                  <br /><br/> Mi idea del arte es poder transformar tu inspiración a la realidad, claramente poniéndole el toque LAM.
+                  <br /><br />Espero que podamos trabajar en conjunto, de forma que las personas te reconozcan como una marca ejemplar, con un toque creativo.</h3>
+                </div>
               </div>
-              <div className='flex flex-row gap-[2vh] ml-7 mt-2'>
+              <div className='flex flex-row gap-[2vh] ml-7 mt-4'>
                 <a
                   href="https://www.instagram.com/lightsandmedialam/"
                   target="_blank"
@@ -158,26 +178,29 @@ export default function Page() {
                 </a>
               </div>
             </div>
-            <div className='flex flex-col bg-indigo-200 pb-4 w-auto lg:h-[65vh] lg:w-[80vh] gap-[2vh] rounded-3xl hover:scale-105 transition-transformhover:scale-105 transition-transform'>
+            <div className='hover:shadow-custom flex flex-col bg-indigo-200 pb-4 w-auto lg:h-[78vh] lg:w-[80vh] gap-[2vh] rounded-xl transform hover:scale-105 transition-transform overflow-hidden relative z-10'>
               <div>
                 <Image alt='Shade'
                   src='/Shade.webp'
                   width={403}
                   height={329}
-                  className='rounded-[1rem]' />
+                 
+                  />
               </div>
-              <div className='flex flex-col ml-6'>
-
-                <h3 className={`${tinos.className} text-black text-[1rem]`}>Creadora de multimedia</h3>
-
-
+              <div className='flex flex-col px-8'>
+                <div>
                 <h2 className={`${tinos.className} font-bold text-black bottom-1 text-[1.5rem] `}>Shade González</h2>
 
-
-                <h3 className={`${tinos.className} text-black text-[1rem] mt-2`}>Destaca por su habilidad para combinar arte y tecnología, creando experiencias visuales únicas. Su enfoque innovador da vida a proyectos cautivadores, desde diseño gráfico hasta elementos multimedia. Shade redefine la creatividad digital, invitándote a explorar un mundo visualmente impactante.</h3>
-
+                  <h3 className={`${tinos.className} text-black text-[1rem] mt-[-0.5rem]`}>Lic. Comunicación Digital y Fotografía.<br/>Creadora de multimedia.</h3>
+                </div>
+                <div className='mt-6'>
+                  <h3 className={`${tinos.className} text-black text-[1rem]`}>¿Sabías que la palabra &#34;fotografía&#34; significa &#34;dibujar con luz&#34;?, pues te cuento que ¡de eso practicamente se trata mi trabajo!
+                    <br /><br/>Un placer conocerte, espero que estés aquí para planear tu próximo paso de éxito, y sobre todo, como fotógrafa y filmmaker, ayudarte a plasmar lo más autentico de tu marca.
+                    <br /><br/>¿Listo para empezar?</h3>
+                </div>
               </div>
               <div className='flex flex-row gap-[2vh] ml-7 mt-2'>
+
                 <a
                   href="https://www.instagram.com/lightsandmedialam/"
                   target="_blank"
@@ -199,15 +222,18 @@ export default function Page() {
                 >
                   <svg className='w-4 h-4 fill-black transition-fill-03s cursor-pointer hover:scale-105 hover:text-indigo-300 ' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" /></svg>
                 </a>
+             
               </div>
+              
             </div>
+            
           </div>
         </div>
       </section>
-      <section id='servicios' className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-300 via-blue-100 to-white h-full lg:pb-8'>
+      <section id='servicios' className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-300 via-blue-100 to-white h-full pb-20'>
         <div className='mx-auto max-w-7xl'>
-          <div className='flex justify-center items-center'>
-            <h1 className={`${tinos.className} text-center text-black text-5xl lg:text-[5rem] pt-5 pb-5`}>Servicios para tu presencia digital</h1>
+          <div className='flex justify-center items-center py-8'>
+            <h1 className={`${tinos.className} text-center text-blue-300 text-3xl lg:text-[3.25rem] pt-5 pb-5`}>Descubre los servicios que ofrecemos</h1>
           </div>
           <div className='flex flex-col justify-center items-center'>
             <div className='flex flex-col lg:flex-row justify-between gap-4 pb-4'>
@@ -345,47 +371,130 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id='Cualidades'>
-        <div className='mx-auto max-w-7xl'>
-          <div className='flex justify-center items-center'>
-            <h1 className={`${tinos.className} text-center text-black text-5xl lg:text-[5rem] py-5`}>Cualidades según nuestros clientes</h1>
+      <section id='inspiracion' className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-300 via-blue-100 to-white h-full'>
+        <div className=''>
+          <div className='flex justify-center items-center py-12 mx-auto'>
+            <h1 className={`${tinos.className} text-center text-black text-5xl lg:text-[5rem]`}>Por si necesitas <br/>inspiración para tu <br/> contenido...</h1>
           </div>
-          <div className='flex flex-col lg:flex-row justify-between'>
-            <div className=' flex flex-col justify-start items-start'>
-              <h1 className={`${tinos.className} text-green-950 text-[3rem]`}>01.</h1>
-              <h3 className={`${tinos.className} text-black text-[1.25rem]`}>Creatividad ante todo.</h3>
-              <div className="h-[3px] w-full bg-black mt-6"></div>
-            </div>
-            <div className=' flex flex-col justify-start items-start'>
-              <h1 className={`${tinos.className} text-green-950 text-[3rem]`}>02.</h1>
-              <h3 className={`${tinos.className} text-black text-[1.25rem]`}>Inigualablemente autenticas.</h3>
-              <div className="h-[3px] w-full bg-black mt-6"></div>
-            </div>
-            <div className=' flex flex-col justify-start items-start'>
-              <h1 className={`${tinos.className} text-green-950 text-[3rem]`}>03.</h1>
-              <h3 className={`${tinos.className} text-black text-[1.25rem]`}>Responsabilidad al tope.</h3>
-              <div className="h-[3px] w-full bg-black mt-6"></div>
-            </div>
-            <div className=' flex flex-col justify-start items-start'>
-              <h1 className={`${tinos.className} text-green-950 text-[3rem]`}>04.</h1>
-              <h3 className={`${tinos.className} text-black text-[1.25rem]`}>Experiencia favorable.</h3>
-              <div className="h-[3px] w-full bg-black mt-6"></div>
-            </div>
-            <div className=' flex flex-col justify-start items-start'>
-              <h1 className={`${tinos.className} text-green-950 text-[3rem]`}>05.</h1>
-              <h3 className={`${tinos.className} text-black text-[1.25rem]`}>Hacen de tu marca memorable.</h3>
-              <div className="h-[3px] w-full bg-black mt-6"></div>
-            </div>
+          <div className="grid grid-cols-3 h-[275vh] mx-5">
+            
+       <div className="col-span-1 relative overflow-hidden  ">
+              <figure className="effect-layla">
+                <div className="absolute inset-0 bg-cover bg-center bg-insp"></div>   
+                <figcaption>
+						</figcaption>	
+              </figure>
+              </div>
+              
+       <div className="col-span-1 relative overflow-hidden  ">
+              <figure className="effect-layla">
+                <div className="absolute inset-0 bg-cover bg-center bg-insp2"></div>   
+                <figcaption>
+						</figcaption>	
+              </figure>
+              </div>
+       <div className="col-span-1 relative overflow-hidden  ">
+              <figure className="effect-layla">
+                <div className="absolute inset-0 bg-cover bg-center bg-insp3"></div>   
+                <figcaption>
+						</figcaption>	
+              </figure>
+              </div>
+
+       <div className="col-span-1 relative overflow-hidden  ">
+              <figure className="effect-layla">
+                <div className="absolute inset-0 bg-cover bg-center bg-insp4"></div>   
+                <figcaption>
+						</figcaption>	
+              </figure>
+              </div>
+       <div className="col-span-1 relative overflow-hidden  ">
+              <figure className="effect-layla">
+                <div className="absolute inset-0 bg-cover bg-center bg-insp5"></div>   
+                <figcaption>
+						</figcaption>	
+              </figure>
+              </div>
+
+     
+       <div className="col-span-1 relative overflow-hidden  ">
+              <figure className="effect-layla">
+                <div className="absolute inset-0 bg-cover bg-center bg-insp6"></div>   
+                <figcaption>
+						</figcaption>	
+              </figure>
+              </div>
+       <div className="col-span-1 relative overflow-hidden  ">
+              <figure className="effect-layla">
+                <div className="absolute inset-0 bg-cover bg-center bg-insp7"></div>   
+                <figcaption>
+						</figcaption>	
+              </figure>
+              </div>
+      <div className="col-span-1 relative overflow-hidden  ">
+              <figure className="effect-layla">
+                <div className="absolute inset-0 bg-cover bg-center bg-insp8"></div>   
+                <figcaption>
+						</figcaption>	
+              </figure>
+              </div>
+    <div className="col-span-1 relative overflow-hidden  ">
+              <figure className="effect-layla">
+                <div className="absolute inset-0 bg-cover bg-center bg-insp9"></div>   
+                <figcaption>
+						</figcaption>	
+              </figure>
+              </div>
           </div>
+          </div>
+      </section>
+      <section id='cualidades' className='bg-black pt-12 pb-48'>
+        <div className='max-w-7xl pb-20 m-20'>
+          <div className='flex justify-start items-start '>
+            <h1 className={`${tinos.className} text-start text-white text-5xl lg:text-[3.5rem]`}>Cualidades según nuestros clientes</h1>
+            </div>
+            </div>
+        <div className=' mx-auto max-w-7xl'>
+          <div className='flex flex-col gap-24 justify-center w-full items-center'>
+            <div>
+          <div className='flex flex-col lg:flex-row justify-between gap-28'>
+            <div className=' flex flex-col justify-start items-start'>
+              <h1 className={`${tinos.className} text-indigo-100 text-[3rem]`}>01.</h1>
+              <h3 className={`${tinos.className} text-white text-[1.25rem]`}>Creatividad ante todo.</h3>
+              <div className="h-[3px] w-full bg-white mt-6"></div>
+            </div>
+            <div className=' flex flex-col justify-start items-start'>
+              <h1 className={`${tinos.className} text-indigo-100 text-[3rem]`}>02.</h1>
+              <h3 className={`${tinos.className} text-white text-[1.25rem]`}>Inigualablemente autenticas.</h3>
+              <div className="h-[3px] w-full bg-white mt-6"></div>
+            </div>
+            <div className=' flex flex-col justify-start items-start'>
+              <h1 className={`${tinos.className} text-indigo-100 text-[3rem]`}>03.</h1>
+              <h3 className={`${tinos.className} text-white text-[1.25rem]`}>Responsabilidad al tope.</h3>
+              <div className="h-[3px] w-full bg-white mt-6"></div>
+            </div>
+            <div className=' flex flex-col justify-start items-start'>
+              <h1 className={`${tinos.className} text-indigo-100 text-[3rem]`}>04.</h1>
+              <h3 className={`${tinos.className} text-white text-[1.25rem]`}>Experiencia favorable.</h3>
+              <div className="h-[3px] w-full bg-white mt-6"></div>
+            </div>
+            <div className=' flex flex-col justify-start items-start'>
+              <h1 className={`${tinos.className} text-indigo-100 text-[3rem]`}>05.</h1>
+              <h3 className={`${tinos.className} text-white text-[1.25rem]`}>Hacen de tu marca memorable.</h3>
+              <div className="h-[3px] w-full bg-white mt-6"></div>
+            </div>
+              </div>
+              </div>
+            </div>
         </div>
       </section>
       <section id='contact' className='bg-gradient-to-b from-white via-gray-200 to-gray-300 h-auto lg:h-[70vh]'>
         <div className='mx-auto max-w-7xl '>
           <div className='flex flex-col h-full gap-12'>
             <div className='flex content-center justify-center mt-12 lg:mt-[10vh]'>
-              <h1 className={`${tinos.className} text-center text-[5rem] text-black`}>Vamo&apos; a eto!</h1>
+              <h1 className={`${tinos.className} text-center text-[3.5rem] text-green-950`}>Ponte en contacto</h1>
             </div>
-            <div className='flex flex-col items-center lg:mt-[10vh] gap-[2.5rem]'>
+            <div className='flex flex-col items-center lg:mt-8 gap-[2.5rem]'>
               <form name="contactus" action='/contactus' method='post'>
                 <input required type='hidden' name='form-name' value='contactus' />
                 <div className="flex flex-row gap-[1.25rem]">

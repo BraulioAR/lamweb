@@ -11,10 +11,25 @@ const config: Config = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'insp': 'url(\'/inspiracion1full.webp\')',
+        'insp2': 'url(\'/inspiracion2full.webp\')',
+        'insp3': 'url(\'/inspiracion3full.webp\')',
+        'insp4': 'url(\'/inspiracion4full.webp\')',
+        'insp5': 'url(\'/inspiracion5full.webp\')',
+        'insp6': 'url(\'/inspiracion6full.webp\')',
+        'insp7': 'url(\'/inspiracion7full.webp\')',
+        'insp8': 'url(\'/inspiracion8full.webp\')',
+        'insp9': 'url(\'/inspiracion9full.webp\')',
       },
+      boxShadow: {
+        'custom': '0 0px 15px rgba(195, 218, 254, 1)',
+    },
     },
   },
-  plugins: [require('tailwindcss-gradients')],
+  plugins: [
+    require('tailwindcss-gradients'),
+    require('tailwindcss-animated')
+  ],
 }
 export default config
