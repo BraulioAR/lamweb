@@ -19,9 +19,9 @@
 .feed {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* 3 columnas con el mismo ancho */
+ 
   gap: 1px;
-  /* Espaciado entre las imágenes */
+ 
 }
 
 article {
@@ -34,15 +34,13 @@ article {
 }
 
 img {
-  max-width: 100%;
-  /* Ajustar la imagen al contenedor */
-  height: auto;
+  max-width: 100%;  height: auto;
  
 }
 
 video {
   max-width: 100%;
-  /* Ajustar la imagen al contenedor */
+
   height: auto;
  
 }

@@ -1,7 +1,7 @@
 'use client'
 
 import { tinos } from '../fonts'
-import InstagramFeed from 'C:/Users/admin/lamweb/src/components/InstagramFeed';
+import  InstagramFeed  from '../../components/InstagramFeed'
 
 export default function Page() {
     return (

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { tinos } from 'C:/Users/admin/lamweb/src/app/fonts'
+import { tinos } from 'src\app\fonts'
 
 
 function InstagramFeed() {

@@ -1,8 +1,8 @@
 'use client'
-import { tinos } from 'C:/Users/admin/lamweb/src/app/fonts'
-import InstagramFeed from 'C:/Users/admin/lamweb/src/components/InstagramFeed';
+import { tinos } from '../../fonts'
+import  InstagramFeed  from '../../../components/InstagramFeed'
 import Image from 'next/image'
-import  Link  from "next/link";
+
 
 export default function Page() {
   return (
