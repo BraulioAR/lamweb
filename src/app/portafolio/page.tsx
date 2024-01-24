@@ -1,7 +1,7 @@
 'use client'
 
-import { tinos } from '../fonts'
-import  InstagramFeed  from '../../components/InstagramFeed'
+import { tinos } from '../fonts';
+import  InstagramFeed from '../../components/InstagramFeed'
 
 export default function Page() {
     return (
