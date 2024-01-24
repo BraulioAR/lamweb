@@ -1,11 +1,14 @@
+/* eslint-disable @next/next/no-sync-scripts */
 'use client'
 import Image from 'next/image'
 import { tinos } from './fonts'
 import Link from 'next/link'
-import { Suspense, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
+import InstagramFeed from '../components/InstagramFeed';
 
 
-export default function Page() {
+export default function Page({ }) {
+ const [posts, setPosts] = useState([]);
   useEffect(() => {
     document.querySelectorAll('[href^="#"]').forEach((anchor) => {
       anchor.addEventListener("click", (e) => { // Use an arrow function here
@@ -54,10 +57,10 @@ export default function Page() {
 
     <main>
       <section id='home' className="flex flex-row h-[80vh] w-full">
-        <video className='absolute top-30 left-0 w-full h-full object-cover z-0' autoPlay muted loop>
+        <video className='absolute top-30 left-0 w-full h-full object-cover z-0' autoPlay muted loop playsInline>
           <source src='/file1.mp4' type='video/mp4'></source>
         </video>
-        <div className='mx-auto max-w-7xl z-10'>
+        <div className='mx-auto max-w-7xl w-11/12 z-10'>
           <div className=' animate-fade animate-duration-[1500ms] flex justify-center items-center w-full h-full '>
             <Image
               className='hover:scale-95 transition-transform'
@@ -65,25 +68,26 @@ export default function Page() {
               alt='logo'
               width={794}
               height={468}
+              
             />
           </div>
         </div>
       </section>
       <section className="relative flex justify-center h-[80vh]">
-        <video className='absolute top-0 left-0 w-full h-full object-cover z-0' autoPlay muted loop>
+        <video className='absolute top-0 left-0 w-full h-full object-cover z-0' autoPlay muted loop playsInline>
           <source src='/file.mp4' type='video/mp4'></source>
         </video>
         <div className='mx-auto max-w-7xl z-10 flex items-center justify-center'>
           <div className="w-[50%] h-[72%]">
-            <div className='flex m-2 mx-auto p-2 justify-center lg:justify-baseline lg:m-[8vh] lg:pt-16 items-center '>
-              <h1 className={`${tinos.className}  text-white text-5xl lg:text-[2.75rem] leading-normal`}>
-                &#34;Deja que las redes sociales hablen de ti. <span className={`${tinos.className} text-white bg-black text-6xl lg:text-[3rem]`}>Nosotros</span> les daremos algo que <span className={`${tinos.className}  text-white bg-black text-6xl lg:text-[3rem]`}>decir</span>.&#34;
+            <div className='flex items-center justify-center lg:justify-baseline lg:m-[8vh] lg:pt-16  '>
+              <h1 className={`${tinos.className}  text-white text-3xl lg:text-[2.75rem] leading-normal`}>
+                &#34;Deja que las redes sociales hablen de ti. <span className={`${tinos.className} text-white bg-black text-3xl lg:text-[4rem]`}>Nosotros</span> les daremos algo que <span className={`${tinos.className}  text-white bg-black text-4xl lg:text-[3rem]`}>decir</span>.&#34;
               </h1>
             </div>
           </div>
         </div>
       </section>
-      <section id='team' className='flex w-screen flex-col h-full p-12 bg-black bg-cover '>
+      <section id='team' className='flex w-full flex-col h-full lg:p-12 bg-black bg-cover '>
         <div className='mx-auto max-w-7xl'>
           <div className={`py-4 lg:py-12 flex flex-col h-auto mx-4 animate-duration-[1500ms] ${isVisible ? 'animate-fade-left' : ''}`}>
             <h1 className={`${tinos.className}  text-center text-white text-6xl lg:text-[3.75rem]`}>
@@ -178,7 +182,7 @@ export default function Page() {
                 </a>
               </div>
             </div>
-            <div className='hover:shadow-custom flex flex-col bg-indigo-200 pb-4 w-auto lg:h-[78vh] lg:w-[80vh] gap-[2vh] rounded-xl transform hover:scale-105 transition-transform overflow-hidden relative z-10'>
+            <div className='hover:shadow-custom flex flex-col bg-indigo-200 mb-12 pb-4 lg:mb-0 w-auto lg:h-[78vh] lg:w-[80vh] gap-[2vh] rounded-xl transform hover:scale-105 transition-transform overflow-hidden relative z-10'>
               <div>
                 <Image alt='Shade'
                   src='/Shade.webp'
@@ -376,7 +380,7 @@ export default function Page() {
           <div className='flex justify-center items-center py-12 mx-auto'>
             <h1 className={`${tinos.className} text-center text-black text-5xl lg:text-[5rem]`}>Por si necesitas <br/>inspiración para tu <br/> contenido...</h1>
           </div>
-          <div className="grid grid-cols-3 h-[275vh] mx-5">
+          <div className="grid lg:grid-cols-3 grid-cols-1  h-[275vh] lg:mx-5">
             
        <div className="col-span-1 relative overflow-hidden  ">
               <figure className="effect-layla">
@@ -448,6 +452,7 @@ export default function Page() {
           </div>
           </div>
       </section>
+    
       <section id='cualidades' className='bg-black pt-12 pb-48'>
         <div className='max-w-7xl pb-20 m-20'>
           <div className='flex justify-start items-start '>
@@ -488,6 +493,11 @@ export default function Page() {
             </div>
         </div>
       </section>
+     
+      <section id='instagramfeed' className='flex justify-center'>
+        <InstagramFeed></InstagramFeed>
+      </section>
+      
       <section id='contact' className='bg-gradient-to-b from-white via-gray-200 to-gray-300 h-auto lg:h-[70vh]'>
         <div className='mx-auto max-w-7xl '>
           <div className='flex flex-col h-full gap-12'>
@@ -495,7 +505,7 @@ export default function Page() {
               <h1 className={`${tinos.className} text-center text-[3.5rem] text-green-950`}>Ponte en contacto</h1>
             </div>
             <div className='flex flex-col items-center lg:mt-8 gap-[2.5rem]'>
-              <form name="contactus" action='/contactus' method='post'>
+              <form name="contactus" action='/contactus' method='POST' data-netlify="true">
                 <input required type='hidden' name='form-name' value='contactus' />
                 <div className="flex flex-row gap-[1.25rem]">
                   <div>
@@ -538,6 +548,14 @@ export default function Page() {
           </div>
         </div>
       </section>
+     
     </main>
+
+    
   )
+
 }
+
+
+
+

@@ -16,6 +16,41 @@
   }
 }
 
+.feed {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 columnas con el mismo ancho */
+  gap: 1px;
+  /* Espaciado entre las imágenes */
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+
+}
+
+img {
+  max-width: 100%;
+  /* Ajustar la imagen al contenedor */
+  height: auto;
+ 
+}
+
+video {
+  max-width: 100%;
+  /* Ajustar la imagen al contenedor */
+  height: auto;
+ 
+}
+
+p {
+  margin-top: 8px;
+  font-size: 14px;
+}
 
 /* Common style */
 .grid figure {
@@ -35,6 +70,22 @@
   min-height: 100%;
   max-width: 100%;
   
+}
+
+.grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+
+}
+
+.grid figure video {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+
 }
 
 .grid figure figcaption {
@@ -60,8 +111,7 @@
   height: 100%;
 }
 
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
+
 .grid figure figcaption>a {
   z-index: 1000;
   text-indent: 200%;
@@ -86,7 +136,7 @@
 
 .grid figure p {
   letter-spacing: 1px;
-  font-size: 68.5%;
+
 }
 
 
@@ -94,13 +144,18 @@
 /***** Layla *****/
 /*---------------*/
 
-figure.effect-layla {
- 
-}
+
+
 
 figure.effect-layla div {
   height: 390px;
 }
+
+figure.effect-layla img {
+  height: 390px;
+}
+
+
 
 figure.effect-layla figcaption {
   padding: 3em;
@@ -159,6 +214,18 @@ figure.effect-layla h2 {
   transform: translate3d(0, -30px, 0);
 }
 
+figure.effect-layla img,
+figure.effect-layla h2 {
+  -webkit-transform: translate3d(0, -30px, 0);
+  transform: translate3d(0, -30px, 0);
+}
+
+figure.effect-layla video,
+figure.effect-layla h2 {
+  -webkit-transform: translate3d(0, -30px, 0);
+  transform: translate3d(0, -30px, 0);
+}
+
 figure.effect-layla div,
 figure.effect-layla figcaption::before,
 figure.effect-layla figcaption::after,
@@ -167,7 +234,35 @@ figure.effect-layla p {
   transition: opacity 0.35s, transform 0.35s;
 }
 
+figure.effect-layla img,
+figure.effect-layla figcaption::before,
+figure.effect-layla figcaption::after,
+figure.effect-layla p {
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-layla video,
+figure.effect-layla figcaption::before,
+figure.effect-layla figcaption::after,
+figure.effect-layla p {
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
 figure.effect-layla:hover div {
+  opacity: 0.7;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+figure.effect-layla:hover img {
+  opacity: 0.7;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+figure.effect-layla:hover video {
   opacity: 0.7;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -194,3 +289,20 @@ figure.effect-layla:hover div {
   -webkit-transition-delay: 0.15s;
   transition-delay: 0.15s;
 }
+
+figure.effect-layla:hover figcaption::after,
+figure.effect-layla:hover h2,
+figure.effect-layla:hover p,
+figure.effect-layla:hover img {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
+figure.effect-layla:hover figcaption::after,
+figure.effect-layla:hover h2,
+figure.effect-layla:hover p,
+figure.effect-layla:hover video {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+

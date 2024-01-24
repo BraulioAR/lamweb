@@ -21,6 +21,14 @@ const config: Config = {
         'insp7': 'url(\'/inspiracion7full.webp\')',
         'insp8': 'url(\'/inspiracion8full.webp\')',
         'insp9': 'url(\'/inspiracion9full.webp\')',
+        'maggie-portfolio': 'url(\'/maggie-portfolio.webp\')',
+        'fotografia-portfolio': 'url(\'/fotografia-portfolio.webp\')',
+        'fraganciaspena-portfolio': 'url(\'/fraganciaspena-portfolio.webp\')',
+        'symmetryc-portfolio': 'url(\'/symmetryc-portfolio.webp\')',
+        'boho-portfolio': 'url(\'/boho-portfolio.webp\')',
+        'estevez-portfolio': 'url(\'/estevez-portfolio.webp\')',
+        'faf1': 'url(\'/freshandfree1.webp\')',
+       
       },
       boxShadow: {
         'custom': '0 0px 15px rgba(195, 218, 254, 1)',

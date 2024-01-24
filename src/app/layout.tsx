@@ -3,6 +3,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Link from 'next/link'
 import { tinos } from './fonts'
+import Image from 'next/image'
+import Head from 'next/head';
 
 
 interface MyMetadata extends Metadata {
@@ -92,12 +94,27 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
+    
     <html lang="es">
-
+      <Head>
+        <Link rel="icon" href="/icons/favicon.ico" /> 
+      </Head>
       <body className={tinos.className}>
-        <header className='flex flex-row justify-end mr-20'>
-          <div className='max-w-7xl'>
-            <div className='flex items-end justify-end sm:justify-between gap-x-2 lg:gap-x-4'>
+        <header>
+          <div className='mx-auto w-full lg:max-w-screen-2xl'>
+            <div className='flex flex-row lg:justify-between justify-center'>
+
+              <div className='hidden lg:block hover:scale-105 pt-2'>
+                <a
+                href="/"
+                target="_self"
+                rel="noopener noreferrer"
+              >
+                  <Image src="/header-logo.jpg" alt="LAM logo" width={85} height={52} className='w-full h-auto object-cover' />
+              </a>
+              </div>
+
+            <div className='flex items-center justify-center  lg:items-end lg:justify-end gap-x-2 lg:gap-x-4 '>
               <Link className={`${tinos.className} text-gray-600 lg:px-3 py-5 cursor-pointer text-sm lg:text-lg hover:scale-105 hover:text-black transition:fill 0.3s`}
                 href="/"
                 rel="noopener noreferrer">Inicio</Link>
@@ -110,14 +127,15 @@ export default function RootLayout({
               <Link className={`${tinos.className} text-gray-600 lg:px-3 py-5 cursor-pointer text-sm lg:text-lg hover:scale-105 hover:text-black transition:fill 0.3s`}
                 href="/#servicios"
                 rel="noopener noreferrer">Servicios</Link>
-              <Link className={`${tinos.className} text-gray-600 lg:px-3 py-5 cursor-pointer text-sm lg:text-lg hover:scale-105 hover:text-black transition:fill 0.3s`}
-                href="/blog"
-                rel="noopener noreferrer">Blog</Link>
+              
               <Link className={`${tinos.className} text-gray-600 lg:px-3 py-5 cursor-pointer text-sm lg:text-lg hover:scale-105 hover:text-black transition:fill 0.3s`}
                 href="/portafolio"
                 rel="noopener noreferrer">Portafolio</Link>
+              </div>
             </div>
+            
           </div>
+          <div className="border-t border-black h-0 mx-auto w-11/12"></div>
         </header>
         {children}
         <footer className='flex flex-col gap-[0.5rem] bg-gray-300'>
@@ -137,7 +155,7 @@ export default function RootLayout({
           </div>
           <div className='flex justify-center'>
             <p className="flex items-center text-sm text-center">
-              &copy; 2023  Lights and Media | Developed by Braulio A. Rosario.
+              &copy; 2024  Lights and Media | Developed by Braulio A. Rosario.
             </p>
           </div>
         </footer>
