@@ -28,7 +28,7 @@ export default function Page() {
                     alt='Optic Fragancias Peña'
                     width={1370}
                     height={1365}
-                    className='w-full h-[80vh] object-scale-down lg:object-cover' />
+                    className='w-full lg:h-[80vh] object-scale-down lg:object-cover' />
             </div>
             <div className='grid grid-rows-12 grid-cols-2 h-full py-12'>
                 <div className="row-span-7 relative overflow-hidden ">
@@ -38,7 +38,7 @@ export default function Page() {
               </video>
               </figure>
                 </div>
-                <div className="lg:row-span-1 row-span-3 relative overflow-hidden  ">
+                <div className="lg:row-span-1 row-span-7 relative overflow-hidden  ">
               <figure className="effect-layla">
                 <Image src='/optic2.webp'
                     alt='Optic Fragancias Peña 2'

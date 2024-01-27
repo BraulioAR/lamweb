@@ -5,8 +5,8 @@ import Image from 'next/image'
 
 export default function Page() {
     return (
-        <section className=' h-auto bg-white pt-12 mx-auto max-w-screen-3xl w-11/12 animate-fade-left animate-duration-[1500ms]'>
-        <div className='flex flex-col lg:flex-row lg:justify-between gap-y-8'>
+        <section className=' h-auto bg-white pt-12 mx-auto max-w-screen-3xl w-full animate-fade-left animate-duration-[1500ms]'>
+        <div className='flex flex-col lg:flex-row lg:justify-between gap-y-8 lg:mx-12 mx-4'>
           <div className='flex flex-row justify-between gap-2'>
           <div className='flex-row flex gap-4'>
             <a href="/portafolio">

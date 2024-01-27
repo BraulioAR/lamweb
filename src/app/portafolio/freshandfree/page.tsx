@@ -48,7 +48,7 @@ export default function Page() {
                     alt='Fresh and Free 2'
                     width={1080}
                     height={1080}
-                            className='w-full'/>   
+                            className='w-full object-cover'/>   
               </figure>
                 </div>
                 <div className="row-span-5 relative overflow-hidden  ">

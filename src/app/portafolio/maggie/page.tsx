@@ -5,8 +5,8 @@ import Image from 'next/image'
 
 export default function Page() {
     return (
-        <section className=' h-auto bg-white pt-12 mx-auto max-w-screen-3xl w-11/12 animate-fade-left animate-duration-[1500ms]'>
-        <div className='flex flex-col lg:flex-row lg:justify-between gap-y-8'>
+        <section className=' h-auto bg-white pt-12 mx-auto max-w-screen-3xl w-full animate-fade-left animate-duration-[1500ms]'>
+        <div className='flex flex-col lg:flex-row lg:justify-between gap-y-8 lg:mx-12 mx-4'>
           <div className='flex flex-row justify-between gap-2'>
           <div className='flex-row flex gap-4'>
             <a href="/portafolio">
@@ -23,13 +23,14 @@ export default function Page() {
           </div>
                 <h2 className={`${tinos.className} text-xl`}>Maggie Uceta se destaca como locutora por su talentosa manera de <br /> comunicar y sobre todo su personalidad espóntanea y extrovertida, chequea su dinámico contenido.</h2>
             </div>
-            <div className='pt-12'>
+            <div className='pt-12 w-full'>
                  <Image src='/maggie-portfolio.webp'
                     alt='Maggie Uceta'
                     width={1370}
                     height={1365}
                     className='w-full h-auto object-cover' />
-            </div>
+        </div>
+        <div className='lg:pl-16 mx-2'>
             <div className='grid grid-rows-6 grid-cols-2 h-full py-12'>
                 <div className="row-span-2 relative overflow-hidden ">
               <figure className="effect-layla">
@@ -46,7 +47,7 @@ export default function Page() {
                     alt='Maggie Uceta 2'
                     width={1619}
                     height={2918}
-                            className='w-full'/>   
+                            className='w-full object-cover'/>   
               </figure>
                 </div>
                 <div className="row-span-2 relative overflow-hidden  ">
@@ -58,7 +59,7 @@ export default function Page() {
                             className='object-cover' />   
               </figure>
                 </div>
-                <div className="row-span-2  relative overflow-hidden  ">
+                <div className="row-span-2  relative overflow-hidden flex justify-center  ">
               <figure className="effect-layla">
               <video loop autoPlay playsInline muted className='object-cover'>
                 <source src='/maggie4.mp4' type="video/mp4" />
@@ -83,7 +84,8 @@ export default function Page() {
                 </div>
 
                 
-            </div>
+          </div>
+          </div>
                <section id='instagramfeed' className='flex justify-center'>
         <InstagramFeed></InstagramFeed>
       </section>

@@ -5,8 +5,8 @@ import Image from 'next/image'
 
 export default function Page() {
     return (
-        <section className=' h-auto bg-white pt-12 mx-auto max-w-screen-3xl w-11/12 animate-fade-left animate-duration-[1500ms]'>
-        <div className='flex flex-col lg:flex-row lg:justify-between gap-y-8'>
+        <section className=' h-auto bg-white pt-12 mx-auto max-w-screen-3xl w-full animate-fade-left animate-duration-[1500ms]'>
+        <div className='flex flex-col lg:flex-row lg:justify-between gap-y-8 lg:mx-12 mx-4'>
           <div className='flex flex-row justify-between gap-2'>
           <div className='flex-row flex gap-4'>
             <a href="/portafolio">
@@ -22,12 +22,12 @@ export default function Page() {
               </div></div>
                 <h2 className={`${tinos.className} text-xl`}>Utilizamos una variedad de técnicas y estilos fotográficos para crear imágenes que <br />sean atractivas y relevantes para nuestro público objetivo. Nos centramos en la <br /> calidad de la imagen, así como en la composición y el mensaje que queremos <br />  transmitir.</h2>
             </div>
-            <div className='pt-12'>
+            <div className='pt-12 w-full'>
                  <Image src='/fotografia-portfolio.webp'
                     alt='Fotografia'
                     width={1370}
                     height={1365}
-                    className='object-cover' />
+                    className='w-full h-auto object-cover' />
             </div>
             <div className='grid grid-rows-8 grid-cols-2 h-full lg:h-[400vh] py-12'>
                 <div className="row-span-1 relative overflow-hidden ">
@@ -36,7 +36,7 @@ export default function Page() {
                     alt='Fotografia 1'
                     width={2000}
                     height={2000}
-                            className='w-full h-full object-cover' />   
+                            className='object-cover' />   
               </figure>
                 </div>
                 <div className="lg:row-span-2 row-span-1 relative overflow-hidden  ">
@@ -45,7 +45,7 @@ export default function Page() {
                     alt='Fotografia 2'
                     width={2150}
                     height={3225}
-                            className='w-full h-full object-cover'/>   
+                            className='object-cover'/>   
               </figure>
                 </div>
                 <div className="row-span-1 relative overflow-hidden  ">
