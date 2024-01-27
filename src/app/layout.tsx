@@ -101,7 +101,7 @@ export default function RootLayout({
       </Head>
       <body className={tinos.className}>
         <header>
-          <div className='mx-auto w-full lg:max-w-screen-2xl'>
+          <div className='mx-auto w-11/12'>
             <div className='flex flex-row lg:justify-between justify-center'>
 
               <div className='hidden lg:block hover:scale-105 pt-2'>
@@ -119,13 +119,13 @@ export default function RootLayout({
                 href="/"
                 rel="noopener noreferrer">Inicio</Link>
               <Link className={`${tinos.className} text-gray-600 lg:px-3 py-5 cursor-pointer text-sm lg:text-lg hover:scale-105 hover:text-black transition:fill 0.3s`}
-                href="/#contact"
+                href="#contact"
                 rel="noopener noreferrer">Contacto</Link>
               <Link className={`${tinos.className} text-gray-600 lg:px-3 py-5 cursor-pointer text-sm lg:text-lg hover:scale-105 hover:text-black transition:fill 0.3s`}
                 href="/acercaDe"
                 rel="noopener noreferrer">Acerca de</Link>
               <Link className={`${tinos.className} text-gray-600 lg:px-3 py-5 cursor-pointer text-sm lg:text-lg hover:scale-105 hover:text-black transition:fill 0.3s`}
-                href="/#servicios"
+                href="#servicios"
                 rel="noopener noreferrer">Servicios</Link>
               
               <Link className={`${tinos.className} text-gray-600 lg:px-3 py-5 cursor-pointer text-sm lg:text-lg hover:scale-105 hover:text-black transition:fill 0.3s`}

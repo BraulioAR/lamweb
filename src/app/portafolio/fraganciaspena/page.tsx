@@ -23,78 +23,65 @@ export default function Page() {
             </div>
                 <h2 className={`${tinos.className} text-xl`}>Esta optica con muchos años de experiencia en el mercado, se <br />caracteriza por sus lentes resistentes y el aroma de sus perfumes <br /> originales, aquí te dejamos cómo manejamos su presencia digital</h2>
             </div>
-            <div className='pt-12 px-40'>
+            <div className='pt-12 lg:px-40 mx-2'>
                  <Image src='/fraganciaspena-portfolio.webp'
-                    alt='Fresh and Free'
+                    alt='Optic Fragancias Peña'
                     width={1370}
                     height={1365}
-                    className='w-full h-[80vh] object-cover' />
+                    className='w-full h-[80vh] object-scale-down lg:object-cover' />
             </div>
             <div className='grid grid-rows-12 grid-cols-2 h-full py-12'>
-                <div className="row-span-9 relative overflow-hidden ">
-              <figure className="effect-layla">
-                <Image src='/freshandfree1.webp'
-                    alt='Fresh and Free 1'
-                    width={2149}
-                    height={3820}
-                            className='w-full h-auto object-cover' />   
+                <div className="row-span-7 relative overflow-hidden ">
+               <figure className="effect-layla">
+              <video loop autoPlay playsInline muted className='object-cover'>
+                <source src='/optic1.mp4' type="video/mp4" />
+              </video>
               </figure>
                 </div>
-                <div className="lg:row-span-6 row-span-3 relative overflow-hidden  ">
+                <div className="lg:row-span-1 row-span-3 relative overflow-hidden  ">
               <figure className="effect-layla">
-                <Image src='/freshandfree2.webp'
-                    alt='Fresh and Free 2'
-                    width={1080}
-                    height={1080}
-                            className='w-full'/>   
+                <Image src='/optic2.webp'
+                    alt='Optic Fragancias Peña 2'
+                    width={2150}
+                    height={3225}
+                            className='object-cover'/>   
+              </figure>
+                </div>
+                <div className="row-span-6 relative overflow-hidden  ">
+              <figure className="effect-layla">
+                <Image src='/optic3.webp'
+                    alt='Optic Fragancias Peña 3'
+                    width={2150}
+                    height={3225}
+                            className='object-cover' />   
+              </figure>
+                </div>
+                <div className="lg:row-span-7 row-span-3 relative overflow-hidden  ">
+              <figure className="effect-layla">
+                <Image src='/optic4.webp'
+                    alt='Optic Fragancias Peña 4'
+                    width={2150}
+                    height={1433}
+                            className='object-cover' />   
               </figure>
                 </div>
                 <div className="row-span-5 relative overflow-hidden  ">
               <figure className="effect-layla">
-                <Image src='/freshandfree3.webp'
-                    alt='Fresh and Free 3'
-                    width={2149}
-                    height={3550}
-                            className='w-full h-auto object-cover' />   
-              </figure>
-                </div>
-                <div className="lg:row-span-6 row-span-3 relative overflow-hidden  ">
-              <figure className="effect-layla">
-                <Image src='/freshandfree4.webp'
-                    alt='Fresh and Free 4'
+                <Image src='/optic5.webp'
+                    alt='Optic Fragancias Peña 5'
                     width={2150}
                     height={3225}
-                            className='w-full h-auto object-cover' />   
-              </figure>
-                </div>
-                <div className="row-span-7 relative overflow-hidden  ">
-              <figure className="effect-layla">
-                <Image src='/freshandfree5.webp'
-                    alt='Fresh and Free 5'
-                    width={2149}
-                    height={3820}
-                            className='w-full h-auto object-cover' />   
+                            className='object-cover' />   
               </figure>
                 </div>
                 <div className="row-span-5 relative overflow-hidden  ">
               <figure className="effect-layla">
-                <Image src='/freshandfree6.webp'
-                    alt='Fresh and Free 6 '
-                    width={2150}
-                    height={3225}
-                            className='w-full h-auto object-cover  '/>   
+              <video loop autoPlay playsInline muted className='object-cover'>
+                <source src='/optic6.mp4' type="video/mp4" />
+              </video>
               </figure>
                 </div>
-                <div className="row-span-1 relative overflow-hidden  ">
-              <figure className="effect-layla">
-                <Image src='/freshandfree7.webp'
-                    alt='Fresh and Free 7'
-                    width={2149}
-                    height={3820}
-                            className='w-full h-auto object-cover' />   
-              </figure>
-                </div>
-                
+ 
             </div>
                <section id='instagramfeed' className='flex justify-center'>
         <InstagramFeed></InstagramFeed>

@@ -25,76 +25,76 @@ Con años en el mercado, Boho Decor es reconocida por sus <br /> decoraciones he
             </div>
             <div className='pt-12'>
                  <Image src='/boho-portfolio.webp'
-                    alt='Fresh and Free'
+                    alt='Boho Decor'
                     width={1370}
                     height={1365}
                     className='w-full h-[89vh] object-cover' />
             </div>
-            <div className='grid grid-rows-12 grid-cols-2 h-full py-12'>
-                <div className="row-span-9 relative overflow-hidden ">
+            <div className='grid grid-rows-4 grid-cols-2 h-full py-12'>
+                <div className="lg:row-span-2 row-span-1 relative overflow-hidden ">
               <figure className="effect-layla">
-                <Image src='/freshandfree1.webp'
-                    alt='Fresh and Free 1'
-                    width={2149}
-                    height={3820}
-                            className='w-full h-auto object-cover' />   
-              </figure>
-                </div>
-                <div className="lg:row-span-6 row-span-3 relative overflow-hidden  ">
-              <figure className="effect-layla">
-                <Image src='/freshandfree2.webp'
-                    alt='Fresh and Free 2'
-                    width={1080}
-                    height={1080}
-                            className='w-full'/>   
-              </figure>
-                </div>
-                <div className="row-span-5 relative overflow-hidden  ">
-              <figure className="effect-layla">
-                <Image src='/freshandfree3.webp'
-                    alt='Fresh and Free 3'
-                    width={2149}
-                    height={3550}
-                            className='w-full h-auto object-cover' />   
-              </figure>
-                </div>
-                <div className="lg:row-span-6 row-span-3 relative overflow-hidden  ">
-              <figure className="effect-layla">
-                <Image src='/freshandfree4.webp'
-                    alt='Fresh and Free 4'
-                    width={2150}
-                    height={3225}
-                            className='w-full h-auto object-cover' />   
-              </figure>
-                </div>
-                <div className="row-span-7 relative overflow-hidden  ">
-              <figure className="effect-layla">
-                <Image src='/freshandfree5.webp'
-                    alt='Fresh and Free 5'
-                    width={2149}
-                    height={3820}
-                            className='w-full h-auto object-cover' />   
-              </figure>
-                </div>
-                <div className="row-span-5 relative overflow-hidden  ">
-              <figure className="effect-layla">
-                <Image src='/freshandfree6.webp'
-                    alt='Fresh and Free 6 '
-                    width={2150}
-                    height={3225}
-                            className='w-full h-auto object-cover  '/>   
+                <Image src='/boho1.webp'
+                    alt='Boho Decor 1'
+                    width={2148}
+                    height={2820}
+                            className='object-cover' />   
               </figure>
                 </div>
                 <div className="row-span-1 relative overflow-hidden  ">
               <figure className="effect-layla">
-                <Image src='/freshandfree7.webp'
-                    alt='Fresh and Free 7'
-                    width={2149}
-                    height={3820}
-                            className='w-full h-auto object-cover' />   
+                <Image src='/boho2.webp'
+                    alt='Boho Decor 2'
+                    width={2148}
+                    height={1433}
+                            className='w-full object-cover'/>   
               </figure>
                 </div>
-                
+                <div className="lg:row-span-3 row-span-1 relative overflow-hidden  ">
+              <figure className="effect-layla">
+                <Image src='/boho3.webp'
+                    alt='Boho Decor 3'
+                    width={2150}
+                    height={3225}
+                            className='object-cover' />   
+              </figure>
+                </div>
+                <div className="lg:row-span-3 row-span-1 relative overflow-hidden  ">
+              <figure className="effect-layla">
+                <Image src='/boho4.webp'
+                    alt='Boho Decor 4'
+                    width={2150}
+                    height={3049}
+                            className='object-cover' />   
+              </figure>
+                </div>
+                <div className="row-span-1 relative overflow-hidden  ">
+              <figure className="effect-layla">
+                <Image src='/boho6.webp'
+                    alt='Boho Decor 5 '
+                    width={2150}
+                    height={1433}
+                            className='object-cover  '/>   
+              </figure>
+                </div>
+                <div className="row-span-1 relative overflow-hidden  ">
+              <figure className="effect-layla">
+                <Image src='/boho7.webp'
+                    alt='Boho Decor 6'
+                    width={2150}
+                    height={1433}
+                            className='object-cover' />   
+            </figure>
+            
+          </div>
+          <div className="row-span-2 relative overflow-hidden  ">
+                <figure className="effect-layla">
+                <Image src='/boho8.webp'
+                    alt='Boho Decor 7'
+                    width={2150}
+                    height={3233}
+                            className='object-cover' />   
+            </figure>
+            </div>
             </div>
                <section id='instagramfeed' className='flex justify-center'>
         <InstagramFeed></InstagramFeed>

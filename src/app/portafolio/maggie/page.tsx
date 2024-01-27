@@ -25,75 +25,63 @@ export default function Page() {
             </div>
             <div className='pt-12'>
                  <Image src='/maggie-portfolio.webp'
-                    alt='Fresh and Free'
+                    alt='Maggie Uceta'
                     width={1370}
                     height={1365}
                     className='w-full h-auto object-cover' />
             </div>
-            <div className='grid grid-rows-12 grid-cols-2 h-full py-12'>
-                <div className="row-span-9 relative overflow-hidden ">
+            <div className='grid grid-rows-6 grid-cols-2 h-full py-12'>
+                <div className="row-span-2 relative overflow-hidden ">
               <figure className="effect-layla">
-                <Image src='/freshandfree1.webp'
-                    alt='Fresh and Free 1'
-                    width={2149}
-                    height={3820}
-                            className='w-full h-auto object-cover' />   
+                <Image src='/maggie1.webp'
+                    alt='Maggie Uceta 1'
+                    width={1686}
+                    height={2998}
+                            className='object-cover' />   
               </figure>
                 </div>
-                <div className="lg:row-span-6 row-span-3 relative overflow-hidden  ">
+                <div className="row-span-2  relative overflow-hidden  ">
               <figure className="effect-layla">
-                <Image src='/freshandfree2.webp'
-                    alt='Fresh and Free 2'
-                    width={1080}
-                    height={1080}
+                <Image src='/maggie2.webp'
+                    alt='Maggie Uceta 2'
+                    width={1619}
+                    height={2918}
                             className='w-full'/>   
               </figure>
                 </div>
-                <div className="row-span-5 relative overflow-hidden  ">
+                <div className="row-span-2 relative overflow-hidden  ">
               <figure className="effect-layla">
-                <Image src='/freshandfree3.webp'
-                    alt='Fresh and Free 3'
-                    width={2149}
-                    height={3550}
-                            className='w-full h-auto object-cover' />   
+                <Image src='/maggie3.webp'
+                    alt='Maggie Uceta 3'
+                    width={2900}
+                    height={4347}
+                            className='object-cover' />   
               </figure>
                 </div>
-                <div className="lg:row-span-6 row-span-3 relative overflow-hidden  ">
+                <div className="row-span-2  relative overflow-hidden  ">
               <figure className="effect-layla">
-                <Image src='/freshandfree4.webp'
-                    alt='Fresh and Free 4'
-                    width={2150}
-                    height={3225}
-                            className='w-full h-auto object-cover' />   
+              <video loop autoPlay playsInline muted className='object-cover'>
+                <source src='/maggie4.mp4' type="video/mp4" />
+              </video>
               </figure>
                 </div>
-                <div className="row-span-7 relative overflow-hidden  ">
+                <div className="row-span-2  relative overflow-hidden  ">
               <figure className="effect-layla">
-                <Image src='/freshandfree5.webp'
-                    alt='Fresh and Free 5'
-                    width={2149}
-                    height={3820}
-                            className='w-full h-auto object-cover' />   
+                <video loop autoPlay playsInline muted className='object-cover'>
+                <source src='/maggie5.mp4' type="video/mp4" />
+              </video>  
               </figure>
                 </div>
-                <div className="row-span-5 relative overflow-hidden  ">
+                <div className="row-span-2 relative overflow-hidden  ">
               <figure className="effect-layla">
-                <Image src='/freshandfree6.webp'
-                    alt='Fresh and Free 6 '
-                    width={2150}
-                    height={3225}
-                            className='w-full h-auto object-cover  '/>   
+                <Image src='/maggie6.webp'
+                    alt='Maggie Uceta 6 '
+                    width={1686}
+                    height={2998}
+                            className='object-cover  '/>   
               </figure>
                 </div>
-                <div className="row-span-1 relative overflow-hidden  ">
-              <figure className="effect-layla">
-                <Image src='/freshandfree7.webp'
-                    alt='Fresh and Free 7'
-                    width={2149}
-                    height={3820}
-                            className='w-full h-auto object-cover' />   
-              </figure>
-                </div>
+
                 
             </div>
                <section id='instagramfeed' className='flex justify-center'>

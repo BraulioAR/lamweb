@@ -39,7 +39,7 @@ export default function Page() {
                     alt='Fresh and Free 1'
                     width={2149}
                     height={3820}
-                            className='w-full h-auto object-cover' />   
+                            className='object-cover' />   
               </figure>
                 </div>
                 <div className="lg:row-span-6 row-span-3 relative overflow-hidden  ">
@@ -57,7 +57,7 @@ export default function Page() {
                     alt='Fresh and Free 3'
                     width={2149}
                     height={3550}
-                            className='w-full h-auto object-cover' />   
+                            className='object-cover' />   
               </figure>
                 </div>
                 <div className="lg:row-span-6 row-span-3 relative overflow-hidden  ">
@@ -66,7 +66,7 @@ export default function Page() {
                     alt='Fresh and Free 4'
                     width={2150}
                     height={3225}
-                            className='w-full h-auto object-cover' />   
+                            className='object-cover' />   
               </figure>
                 </div>
                 <div className="row-span-7 relative overflow-hidden  ">
@@ -75,7 +75,7 @@ export default function Page() {
                     alt='Fresh and Free 5'
                     width={2149}
                     height={3820}
-                            className='w-full h-auto object-cover' />   
+                            className='object-cover' />   
               </figure>
                 </div>
                 <div className="row-span-5 relative overflow-hidden  ">
@@ -84,7 +84,7 @@ export default function Page() {
                     alt='Fresh and Free 6 '
                     width={2150}
                     height={3225}
-                            className='w-full h-auto object-cover  '/>   
+                            className='object-cover  '/>   
               </figure>
                 </div>
                 <div className="row-span-1 relative overflow-hidden  ">
@@ -93,7 +93,7 @@ export default function Page() {
                     alt='Fresh and Free 7'
                     width={2149}
                     height={3820}
-                            className='w-full h-auto object-cover' />   
+                            className='object-cover' />   
               </figure>
                 </div>
                 

@@ -24,76 +24,84 @@ export default function Page() {
             </div>
             <div className='pt-12'>
                  <Image src='/fotografia-portfolio.webp'
-                    alt='Fresh and Free'
+                    alt='Fotografia'
                     width={1370}
                     height={1365}
-                    className='w-full h-auto object-cover' />
+                    className='object-cover' />
             </div>
-            <div className='grid grid-rows-12 grid-cols-2 h-full py-12'>
-                <div className="row-span-9 relative overflow-hidden ">
+            <div className='grid grid-rows-8 grid-cols-2 h-full lg:h-[400vh] py-12'>
+                <div className="row-span-1 relative overflow-hidden ">
               <figure className="effect-layla">
-                <Image src='/freshandfree1.webp'
-                    alt='Fresh and Free 1'
-                    width={2149}
-                    height={3820}
-                            className='w-full h-auto object-cover' />   
+                <Image src='/fotografia1.webp'
+                    alt='Fotografia 1'
+                    width={2000}
+                    height={2000}
+                            className='w-full h-full object-cover' />   
               </figure>
                 </div>
-                <div className="lg:row-span-6 row-span-3 relative overflow-hidden  ">
+                <div className="lg:row-span-2 row-span-1 relative overflow-hidden  ">
               <figure className="effect-layla">
-                <Image src='/freshandfree2.webp'
-                    alt='Fresh and Free 2'
-                    width={1080}
-                    height={1080}
-                            className='w-full'/>   
-              </figure>
-                </div>
-                <div className="row-span-5 relative overflow-hidden  ">
-              <figure className="effect-layla">
-                <Image src='/freshandfree3.webp'
-                    alt='Fresh and Free 3'
-                    width={2149}
-                    height={3550}
-                            className='w-full h-auto object-cover' />   
-              </figure>
-                </div>
-                <div className="lg:row-span-6 row-span-3 relative overflow-hidden  ">
-              <figure className="effect-layla">
-                <Image src='/freshandfree4.webp'
-                    alt='Fresh and Free 4'
+                <Image src='/fotografia2.webp'
+                    alt='Fotografia 2'
                     width={2150}
                     height={3225}
-                            className='w-full h-auto object-cover' />   
-              </figure>
-                </div>
-                <div className="row-span-7 relative overflow-hidden  ">
-              <figure className="effect-layla">
-                <Image src='/freshandfree5.webp'
-                    alt='Fresh and Free 5'
-                    width={2149}
-                    height={3820}
-                            className='w-full h-auto object-cover' />   
-              </figure>
-                </div>
-                <div className="row-span-5 relative overflow-hidden  ">
-              <figure className="effect-layla">
-                <Image src='/freshandfree6.webp'
-                    alt='Fresh and Free 6 '
-                    width={2150}
-                    height={3225}
-                            className='w-full h-auto object-cover  '/>   
+                            className='w-full h-full object-cover'/>   
               </figure>
                 </div>
                 <div className="row-span-1 relative overflow-hidden  ">
               <figure className="effect-layla">
-                <Image src='/freshandfree7.webp'
-                    alt='Fresh and Free 7'
-                    width={2149}
-                    height={3820}
-                            className='w-full h-auto object-cover' />   
+                <Image src='/fotografia3.webp'
+                    alt='Fotografia 3'
+                    width={2150}
+                    height={3225}
+                            className='object-cover' />   
               </figure>
                 </div>
-                
+                <div className="row-span-1 relative overflow-hidden  ">
+              <figure className="effect-layla">
+                <Image src='/fotografia4.webp'
+                    alt='Fotografia 4'
+                    width={2150}
+                    height={1433}
+                            className='object-cover' />   
+              </figure>
+                </div>
+                <div className="lg:row-span-2 row-span-1 relative overflow-hidden  ">
+              <figure className="effect-layla">
+                <Image src='/fotografia5.webp'
+                    alt='Fotografia 5'
+                    width={2150}
+                    height={3225}
+                            className='object-cover' />   
+              </figure>
+                </div>
+                <div className="lg:row-span-2 row-span-1 relative overflow-hidden  ">
+              <figure className="effect-layla">
+                <Image src='/fotografia6.webp'
+                    alt='Fotografia 6 '
+                    width={2150}
+                    height={3225}
+                            className='object-cover  '/>   
+              </figure>
+                </div>
+                <div className="lg:row-span-2 row-span-1 relative overflow-hidden  ">
+              <figure className="effect-layla">
+                <Image src='/fotografia7.webp'
+                    alt='Fotografia 7'
+                    width={2150}
+                    height={3225}
+                            className='object-cover' />   
+              </figure>
+                </div>
+                <div className="lg:row-span-3 row-span-1 relative overflow-hidden  ">
+              <figure className="effect-layla">
+                <Image src='/fotografia8.webp'
+                    alt='Fotografia 8'
+                    width={1687}
+                    height={2999}
+                            className='object-cover' />   
+              </figure>
+                </div>
             </div>
                <section id='instagramfeed' className='flex justify-center'>
         <InstagramFeed></InstagramFeed>

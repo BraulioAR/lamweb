@@ -25,73 +25,71 @@ Aquí te dejamos un poco más sobre esta maravillosa marca.</h2>
             </div>
             <div className='pt-12'>
                 <Image src='/symmetryc-portfolio.webp'
-                    alt='Fresh and Free'
+                    alt='Symmetryc'
                     width={1073}
                     height={858}
                     className='w-full h-[80vh] object-cover' />
             </div>
-            <div className='grid grid-rows-12 grid-cols-2 h-full py-12'>
-                <div className="row-span-9 relative overflow-hidden ">
+            <div className='grid grid-rows-12 grid-cols-2 h-full  py-12'>
+                <div className="lg:row-span-4 row-span-2 relative overflow-hidden ">
               <figure className="effect-layla">
-                <Image src='/freshandfree1.webp'
-                    alt='Fresh and Free 1'
-                    width={2149}
-                    height={3820}
-                            className='w-full h-auto object-cover' />   
-              </figure>
-                </div>
-                <div className="lg:row-span-6 row-span-3 relative overflow-hidden  ">
-              <figure className="effect-layla">
-                <Image src='/freshandfree2.webp'
-                    alt='Fresh and Free 2'
-                    width={1080}
-                    height={1080}
-                            className='w-full'/>   
-              </figure>
-                </div>
-                <div className="row-span-5 relative overflow-hidden  ">
-              <figure className="effect-layla">
-                <Image src='/freshandfree3.webp'
-                    alt='Fresh and Free 3'
-                    width={2149}
-                    height={3550}
-                            className='w-full h-auto object-cover' />   
-              </figure>
-                </div>
-                <div className="lg:row-span-6 row-span-3 relative overflow-hidden  ">
-              <figure className="effect-layla">
-                <Image src='/freshandfree4.webp'
-                    alt='Fresh and Free 4'
-                    width={2150}
-                    height={3225}
-                            className='w-full h-auto object-cover' />   
-              </figure>
-                </div>
-                <div className="row-span-7 relative overflow-hidden  ">
-              <figure className="effect-layla">
-                <Image src='/freshandfree5.webp'
-                    alt='Fresh and Free 5'
-                    width={2149}
-                    height={3820}
-                            className='w-full h-auto object-cover' />   
-              </figure>
-                </div>
-                <div className="row-span-5 relative overflow-hidden  ">
-              <figure className="effect-layla">
-                <Image src='/freshandfree6.webp'
-                    alt='Fresh and Free 6 '
-                    width={2150}
-                    height={3225}
-                            className='w-full h-auto object-cover  '/>   
+              <video loop autoPlay playsInline muted className='object-cover'>
+                <source src='/symmetryc1.mp4' type="video/mp4" />
+              </video>
               </figure>
                 </div>
                 <div className="row-span-1 relative overflow-hidden  ">
               <figure className="effect-layla">
-                <Image src='/freshandfree7.webp'
-                    alt='Fresh and Free 7'
-                    width={2149}
-                    height={3820}
-                            className='w-full h-auto object-cover' />   
+                <Image src='/symmetryc2.webp'
+                    alt='Symmetryc 2'
+                    width={1277}
+                    height={949}
+                            className='object-cover'/>   
+              </figure>
+                </div>
+                <div className="row-span-3 relative overflow-hidden  ">
+              <figure className="effect-layla">
+                <Image src='/symmetryc3.webp'
+                    alt='Symmetryc 3'
+                    width={1024}
+                    height={1024}
+                            className='object-cover' />   
+              </figure>
+                </div>
+                <div className="lg:row-span-2 row-span-1  relative overflow-hidden  ">
+              <figure className="effect-layla">
+                <Image src='/symmetryc4.webp'
+                    alt='Symmetryc 4'
+                    width={1218}
+                    height={719}
+                            className='object-cover' />   
+              </figure>
+                </div>
+                <div className="row-span-4 relative overflow-hidden  ">
+              <figure className="effect-layla">
+                <Image src='/symmetryc5.webp'
+                    alt='Symmetryc 5'
+                    width={1277}
+                    height={949}
+                            className='object-cover' />   
+              </figure>
+                </div>
+                <div className="lg:row-span-4 row-span-2 relative overflow-hidden  ">
+              <figure className="effect-layla">
+                <Image src='/symmetryc6.webp'
+                    alt='Symmetryc 6 '
+                    width={1280}
+                    height={1280}
+                            className='object-cover  '/>   
+              </figure>
+                </div>
+                <div className="row-span-3 relative overflow-hidden  ">
+              <figure className="effect-layla">
+                <Image src='/symmetryc7.webp'
+                    alt='Symmetryc 7'
+                    width={1280}
+                    height={1280}
+                            className='object-cover' />   
               </figure>
                 </div>
                 

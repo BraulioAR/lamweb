@@ -78,24 +78,25 @@ export default function Page({ }) {
           <source src='/file.mp4' type='video/mp4'></source>
         </video>
         <div className='mx-auto max-w-7xl z-10 flex items-center justify-center'>
-          <div className="w-[50%] h-[72%]">
-            <div className='flex items-center justify-center lg:justify-baseline lg:m-[8vh] lg:pt-16  '>
+          <div className="w-[50%] h-[72%] flex items-center justify-center">
+            
               <h1 className={`${tinos.className}  text-white text-3xl lg:text-[2.75rem] leading-normal`}>
                 &#34;Deja que las redes sociales hablen de ti. <span className={`${tinos.className} text-white bg-black text-3xl lg:text-[4rem]`}>Nosotros</span> les daremos algo que <span className={`${tinos.className}  text-white bg-black text-4xl lg:text-[3rem]`}>decir</span>.&#34;
               </h1>
-            </div>
+            
           </div>
         </div>
       </section>
       <section id='team' className='flex w-full flex-col h-full lg:p-12 bg-black bg-cover '>
-        <div className='mx-auto max-w-7xl'>
+        <div className='mx-auto max-w-7xl w-11/12'>
           <div className={`py-4 lg:py-12 flex flex-col h-auto mx-4 animate-duration-[1500ms] ${isVisible ? 'animate-fade-left' : ''}`}>
             <h1 className={`${tinos.className}  text-center text-white text-6xl lg:text-[3.75rem]`}>
               Conoce al #TEAMLAM
             </h1>
             <h3 className={`${tinos.className} text-center text-white text-4xl mt-8 lg:text-[1.25rem]`}>Solo somos un grupo de gente creativa, ¡fundiendo cada día!</h3>
           </div>
-          <div className='flex flex-col lg:flex-row gap-8 mx-4 items-center lg:pb-8'>
+          <div className='flex items-center justify-center max-w-7xl mx-4'>
+          <div className='flex flex-col lg:flex-row lg:gap-8 gap-12 mx-4 items-center justify-center lg:pb-8 lg:w-full w-10/12'>
             <div className='hover:shadow-custom flex flex-col bg-indigo-200 h-auto lg:h-[78vh] pb-4 w-auto lg:w-[80vh] gap-[2vh] rounded-3xl hover:scale-105 transition-transform overflow-hidden'>
               <div>
                 <Image alt='Jenny TM1'
@@ -231,7 +232,8 @@ export default function Page({ }) {
               
             </div>
             
-          </div>
+            </div>
+            </div>
         </div>
       </section>
       <section id='servicios' className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-300 via-blue-100 to-white h-full pb-20'>
@@ -376,11 +378,11 @@ export default function Page({ }) {
         </div>
       </section>
       <section id='inspiracion' className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-300 via-blue-100 to-white h-full'>
-        <div className=''>
           <div className='flex justify-center items-center py-12 mx-auto'>
             <h1 className={`${tinos.className} text-center text-black text-5xl lg:text-[5rem]`}>Por si necesitas <br/>inspiración para tu <br/> contenido...</h1>
           </div>
-          <div className="grid lg:grid-cols-3 grid-cols-1  h-[275vh] lg:mx-5">
+       
+          <div className="grid lg:grid-cols-3 grid-cols-1 h-[275vh] lg:mx-5 mx-auto w-11/12">
             
        <div className="col-span-1 relative overflow-hidden  ">
               <figure className="effect-layla">
@@ -450,16 +452,16 @@ export default function Page({ }) {
               </figure>
               </div>
           </div>
-          </div>
+          
       </section>
     
-      <section id='cualidades' className='bg-black pt-12 pb-48'>
-        <div className='max-w-7xl pb-20 m-20'>
+      <section id='cualidades' className='bg-black pb-48 w-screen'>
+        <div className='pt-12 pb-20 m-20'>
           <div className='flex justify-start items-start '>
             <h1 className={`${tinos.className} text-start text-white text-5xl lg:text-[3.5rem]`}>Cualidades según nuestros clientes</h1>
             </div>
             </div>
-        <div className=' mx-auto max-w-7xl'>
+        <div className=' mx-auto max-w-6xl w-11/12'>
           <div className='flex flex-col gap-24 justify-center w-full items-center'>
             <div>
           <div className='flex flex-col lg:flex-row justify-between gap-28'>
@@ -494,12 +496,12 @@ export default function Page({ }) {
         </div>
       </section>
      
-      <section id='instagramfeed' className='flex justify-center'>
+      <section id='instagramfeed' className='flex justify-center mx-4'>
         <InstagramFeed></InstagramFeed>
       </section>
       
       <section id='contact' className='bg-gradient-to-b from-white via-gray-200 to-gray-300 h-auto lg:h-[70vh]'>
-        <div className='mx-auto max-w-7xl '>
+        <div className='mx-auto max-w-7xl w-11/12 '>
           <div className='flex flex-col h-full gap-12'>
             <div className='flex content-center justify-center mt-12 lg:mt-[10vh]'>
               <h1 className={`${tinos.className} text-center text-[3.5rem] text-green-950`}>Ponte en contacto</h1>
