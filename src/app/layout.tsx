@@ -119,7 +119,7 @@ export default function RootLayout({
                 href="/"
                 rel="noopener noreferrer">Inicio</Link>
               <Link className={`${tinos.className} text-gray-600 lg:px-3 py-5 cursor-pointer text-sm lg:text-lg hover:scale-105 hover:text-black transition:fill 0.3s`}
-                href="#contact"
+                href="/contactus"
                 rel="noopener noreferrer">Contacto</Link>
               <Link className={`${tinos.className} text-gray-600 lg:px-3 py-5 cursor-pointer text-sm lg:text-lg hover:scale-105 hover:text-black transition:fill 0.3s`}
                 href="/acercaDe"

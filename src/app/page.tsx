@@ -97,7 +97,7 @@ export default function Page({ }) {
           </div>
           <div className='flex items-center justify-center max-w-7xl mx-4'>
           <div className='flex flex-col lg:flex-row lg:gap-8 gap-12 mx-4 items-center justify-center lg:pb-8 lg:w-full w-10/12'>
-            <div className='hover:shadow-custom flex flex-col bg-indigo-200 h-auto lg:h-[78vh] pb-4 w-auto lg:w-[80vh] gap-[2vh] rounded-3xl hover:scale-105 transition-transform overflow-hidden'>
+            <div className='hover:shadow-custom flex flex-col bg-indigo-200 h-auto lg:h-auto pb-4 w-[42vh] lg:w-full gap-[2vh] rounded-3xl hover:scale-105 transition-transform overflow-hidden'>
               <div>
                 <Image alt='Jenny TM1'
                   src='/Jenny.webp'
@@ -140,7 +140,7 @@ export default function Page({ }) {
                 </a>
               </div>
             </div>
-            <div className='hover:shadow-custom flex flex-col bg-indigo-200 pb-4 w-auto lg:h-[78vh] lg:w-[80vh] gap-[2vh] rounded-3xl hover:scale-105 transition-transform overflow-hidden'>
+            <div className='hover:shadow-custom flex flex-col bg-indigo-200 pb-4 lg:h-auto w-[42vh] lg:w-full gap-[2vh] rounded-3xl hover:scale-105 transition-transform overflow-hidden'>
               <div>
                 <Image alt='Gabriella TM1'
                   src='/Gabriella.webp'
@@ -183,7 +183,7 @@ export default function Page({ }) {
                 </a>
               </div>
             </div>
-            <div className='hover:shadow-custom flex flex-col bg-indigo-200 mb-12 pb-4 lg:mb-0 w-auto lg:h-[78vh] lg:w-[80vh] gap-[2vh] rounded-xl transform hover:scale-105 transition-transform overflow-hidden relative z-10'>
+            <div className='hover:shadow-custom flex flex-col bg-indigo-200 mb-12 pb-4 lg:mb-0  lg:h-auto w-[42vh] lg:w-full gap-[2vh] rounded-xl transform hover:scale-105 transition-transform overflow-hidden relative z-10'>
               <div>
                 <Image alt='Shade'
                   src='/Shade.webp'
@@ -381,8 +381,8 @@ export default function Page({ }) {
           <div className='flex justify-center items-center py-12 mx-auto'>
             <h1 className={`${tinos.className} text-center text-black text-5xl lg:text-[5rem]`}>Por si necesitas <br/>inspiración para tu <br/> contenido...</h1>
           </div>
-       
-          <div className="grid lg:grid-cols-3 grid-cols-1 h-[275vh] lg:mx-5 mx-auto w-11/12">
+  
+          <div className="grid lg:grid-cols-3 grid-cols-1 h-[275vh] w-full pl-5 lg:px-5">
             
        <div className="col-span-1 relative overflow-hidden  ">
               <figure className="effect-layla">
@@ -452,11 +452,11 @@ export default function Page({ }) {
               </figure>
               </div>
           </div>
-          
+         
       </section>
     
       <section id='cualidades' className='bg-black pb-48 w-screen'>
-        <div className='pt-12 pb-20 m-20'>
+        <div className='pt-12 pb-20 mx-20'>
           <div className='flex justify-start items-start '>
             <h1 className={`${tinos.className} text-start text-white text-5xl lg:text-[3.5rem]`}>Cualidades según nuestros clientes</h1>
             </div>
