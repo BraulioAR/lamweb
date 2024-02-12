@@ -7,8 +7,9 @@ function InstagramFeed() {
 
   useEffect(() => {
     const fetchData = async () => {
+     
       const response = await fetch(
-        "https://graph.instagram.com/me/media?fields=thumbnail_url,media_url,caption,permalink,media_type&limit=9&access_token=IGQWRPV0UwV3d1bU1lT3ZAIVzJGdmFPUk9WWnZAnYmtBVXBrRkZAMQUtqUWVCbTVfZA0loVnV6U0toLUdMNjNZAb1RjSGk3TFdXRGZALcGV0ZAUlFZAVcxd05jX3lUVEVOMndpR1N1VFRiNVIwU3VkalI1eWtjRWpwaGJ1SUkZD"
+        "https://graph.instagram.com/me/media?fields=thumbnail_url,media_url,caption,permalink,media_type&limit=9&access_token=IGQWROYS02anEwTUQ1UjBWTnoxRWpuZAkRGMTNUQUg0bExCc29FeGhWUDJDZA0VRLVA2c2dtZA2pMVjdFQ1lYRDgxand6MUFsWnVuRUJzLVRuNG1iSkFGN2MzUHNhT0cwU3hSeUFKbEdKaEVCbnZAhbFNWYjhmdmxaV0kZD"
       );
       const json = await response.json();
       
