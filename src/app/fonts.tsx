@@ -1,7 +1,7 @@
-import { Tinos } from 'next/font/google'
+import { Lato } from 'next/font/google'
 
 
-export const tinos = Tinos({
+export const tinos = Lato({
     weight: ['400', '700'],
     subsets: ['latin'],
     style: ['italic', 'normal',]

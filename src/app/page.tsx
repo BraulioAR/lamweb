@@ -455,7 +455,7 @@ export default function Page({ }) {
          
       </section>
     
-      <section id='cualidades' className='bg-black pb-48 w-screen'>
+      <section id='cualidades' className='bg-black pb-48 w-full'>
         <div className='pt-12 pb-20 mx-20'>
           <div className='flex justify-start items-start '>
             <h1 className={`${tinos.className} text-start text-white text-5xl lg:text-[3.5rem]`}>Cualidades según nuestros clientes</h1>

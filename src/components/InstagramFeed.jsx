@@ -40,8 +40,8 @@ function InstagramFeed() {
                 Your browser does not support the video tag.
               </video>
             ) : null}
-						<figcaption className='flex justify-center items-center'>
-                    <p className={`${tinos.className} text-black font-bold text-2xl text-center hidden lg:block`}>{caption}</p>
+						<figcaption className='flex justify-center items-center overflow-visible'>
+                    <p className={`${tinos.className} text-black font-bold text-lg text-center hidden lg:block `}>{caption}</p>
                     <a href={permalink} target="_blank" rel="noopener noreferrer"></a>
 						</figcaption>			
               </figure>
