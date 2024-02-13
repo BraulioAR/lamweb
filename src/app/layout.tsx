@@ -98,6 +98,9 @@ export default function RootLayout({
     <html lang="es">
       <Head>
         <Link rel="icon" href="/icons/favicon.ico" /> 
+        <title>Lights and Media: Social Media Agency</title>
+        <meta name="description" content="Lights and Media es una agencia especializada en manejo de redes sociales, marketing digital, fotografía profesional, publicidad online y estrategias digitales para marcas." />
+        <meta name="keywords" content="Social Media Agency, Manejo de Redes Sociales, Marketing Digital, Fotografía Profesional, Publicidad Online, Estrategia Digital, Branding Digital, Marketing de Influencers, Anuncios en Redes Sociales, Posicionamiento en Redes Sociales, Estrategias de Engagement, Marketing de Contenidos, Campañas Publicitarias Digitales, Consultoría en Redes Sociales, Agencia de Redes Sociales" />
       </Head>
       <body className={tinos.className}>
         <header>
