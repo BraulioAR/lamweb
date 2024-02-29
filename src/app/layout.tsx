@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next'
 
 import './globals.css'
@@ -7,11 +8,14 @@ import Image from 'next/image'
 import Head from 'next/head';
 
 
+import  Header  from '../components/Header'
+
 interface MyMetadata extends Metadata {
   extra?: {
     [key: string]: any;
   };
 }
+
 
 export const metadata: MyMetadata = {
   title: 'Lights and Media',
@@ -88,11 +92,12 @@ export const metadata: MyMetadata = {
   ],
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+
+
+export default function RootLayout({ children }: { children: React.ReactNode })
+{
+ 
+
   return (
     
     <html lang="es">
@@ -101,43 +106,7 @@ export default function RootLayout({
         
       </Head>
       <body className={tinos.className}>
-        <header>
-          <div className='mx-auto w-11/12'>
-            <div className='flex flex-row lg:justify-between justify-center'>
-
-              <div className='hidden lg:block hover:scale-105 pt-2'>
-                <a
-                href="/"
-                target="_self"
-                rel="noopener noreferrer"
-              >
-                  <Image src="/header-logo.jpg" alt="LAM logo" width={85} height={52} className='w-full h-auto object-cover' />
-              </a>
-              </div>
-
-            <div className='flex items-center justify-center  lg:items-end lg:justify-end gap-x-2 lg:gap-x-4 '>
-              <Link className={`${tinos.className} text-gray-600 lg:px-3 py-5 cursor-pointer text-sm lg:text-lg hover:scale-105 hover:text-black transition:fill 0.3s`}
-                href="/"
-                rel="noopener noreferrer">Inicio</Link>
-              <Link className={`${tinos.className} text-gray-600 lg:px-3 py-5 cursor-pointer text-sm lg:text-lg hover:scale-105 hover:text-black transition:fill 0.3s`}
-                href="/contactus"
-                rel="noopener noreferrer">Contacto</Link>
-              <Link className={`${tinos.className} text-gray-600 lg:px-3 py-5 cursor-pointer text-sm lg:text-lg hover:scale-105 hover:text-black transition:fill 0.3s`}
-                href="/acercaDe"
-                rel="noopener noreferrer">Acerca de</Link>
-              <Link className={`${tinos.className} text-gray-600 lg:px-3 py-5 cursor-pointer text-sm lg:text-lg hover:scale-105 hover:text-black transition:fill 0.3s`}
-                href="#servicios"
-                rel="noopener noreferrer">Servicios</Link>
-              
-              <Link className={`${tinos.className} text-gray-600 lg:px-3 py-5 cursor-pointer text-sm lg:text-lg hover:scale-105 hover:text-black transition:fill 0.3s`}
-                href="/portafolio"
-                rel="noopener noreferrer">Portafolio</Link>
-              </div>
-            </div>
-            
-          </div>
-          <div className="border-t border-black h-0 mx-auto w-11/12"></div>
-        </header>
+          <Header></Header>
         {children}
         <footer className='flex flex-col gap-[0.5rem] bg-gray-300'>
           <div

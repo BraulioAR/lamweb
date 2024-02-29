@@ -9,17 +9,17 @@ import InstagramFeed from '../components/InstagramFeed';
 
 export default function Page({ }) {
  const [posts, setPosts] = useState([]);
-  useEffect(() => {
+useEffect(() => {
     document.querySelectorAll('[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener("click", (e) => { // Use an arrow function here
+      anchor.addEventListener("click", (e) => {
         e.preventDefault();
-        const targetId = anchor.getAttribute("href") as string; // Use 'anchor' instead of 'this'
+        const targetId = anchor.getAttribute("href") as string;
 
-        if (targetId) {
+        if (targetId && targetId.startsWith("#")) {
           const target = document.querySelector(targetId);
-          const headerHeight = 0;
 
           if (target) {
+            const headerHeight = 0;
             const elementPosition = target.getBoundingClientRect().top;
             const offsetPosition = elementPosition - headerHeight;
 
@@ -32,7 +32,7 @@ export default function Page({ }) {
       });
     });
   }, []);
-
+  
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -81,7 +81,7 @@ export default function Page({ }) {
           <div className="w-[50%] h-[72%] flex items-center justify-center">
             
               <h1 className={`${tinos.className}  text-white text-3xl lg:text-[2.75rem] leading-normal`}>
-                &#34;Deja que las redes sociales hablen de ti. <span className={`${tinos.className} text-white bg-black text-3xl lg:text-[4rem]`}>Nosotros</span> les daremos algo que <span className={`${tinos.className}  text-white bg-black text-4xl lg:text-[3rem]`}>decir</span>.&#34;
+                &#34;Deja que las redes sociales hablen de ti. <span className={`${tinos.className} text-white bg-black text-3xl lg:text-[3rem]`}>Nosotros</span> les daremos algo que <span className={`${tinos.className}  text-white bg-black text-4xl lg:text-[3rem]`}>decir</span>.&#34;
               </h1>
             
           </div>
@@ -151,7 +151,7 @@ export default function Page({ }) {
               <div className='flex flex-col px-8'>
                 <div>
                 <h2 className={`${tinos.className} font-bold text-black text-[1.5rem]`}>Gabriella Soriano</h2>
-                <h3 className={`${tinos.className} text-black text-[1rem]  mt-[-0.5rem]`}>Lic. Comunicación Digtial; Diseñadora gráfica y página web.</h3>
+                <h3 className={`${tinos.className} text-black text-[1rem]  mt-[-0.5rem]`}>Lic. Comunicación Digital. Diseñadora gráfica y página web.</h3>
                 </div>
                 <div className='mt-7'>
                 <h3 className={`${tinos.className} text-black text-[1rem]`}>¡Me encanta crear! de hecho, tal vez sea una de las personas más creativas que conocerás.
