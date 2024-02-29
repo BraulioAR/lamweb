@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import { tinos } from '../fonts'
 import Link from 'next/link'
