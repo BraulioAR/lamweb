@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import { tinos } from '../fonts'
 import Link from 'next/link'
-import { useEffect, useState } from 'react';
+import  InstagramFeed  from '../../components/InstagramFeed'
 
 
 export default function Page() {
     return (
+        <section>
 <section id='servicios' className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-300 via-blue-100 to-white h-full pb-20'>
         <div className='mx-auto max-w-7xl'>
           <div className='flex justify-center items-center py-8'>
@@ -145,5 +146,10 @@ export default function Page() {
               </div>
             </div>
           </div>
-        </div>
-      </section>)}
+                </div>
+                </section>
+            <InstagramFeed></InstagramFeed>
+        </section>
+        
+    )
+}
