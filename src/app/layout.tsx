@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { tinos } from './fonts'
 import Image from 'next/image'
 import Head from 'next/head';
+import GoogleAnalytics from '../components/GoogleAnalytics';
 
 
 import  Header  from '../components/Header'
@@ -105,6 +106,7 @@ export default function RootLayout({ children }: { children: React.ReactNode })
         <Link rel="icon" href="/icons/favicon.ico" /> 
         
       </Head>
+       <GoogleAnalytics />
       <body className={tinos.className}>
           <Header></Header>
         {children}
