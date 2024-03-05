@@ -9,12 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^14.1.2",
     "fs": "^0.0.1-security",
     "instafeed.js": "^2.0.0",
     "instagram-private-api": "^1.45.3",
     "instagram-web-api": "^2.2.2",
     "net": "^1.0.2",
-    "next": "14.0.1",
+    "next": "^14.1.2",
     "react": "^18",
     "react-dom": "^18",
     "tailwindcss-animated": "^1.0.1",
