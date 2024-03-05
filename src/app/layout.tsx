@@ -103,10 +103,11 @@ export default function RootLayout({ children }: { children: React.ReactNode })
     
     <html lang="es">
       <Head>
+        <GoogleAnalytics />
         <Link rel="icon" href="/icons/favicon.ico" /> 
         
       </Head>
-       <GoogleAnalytics />
+       
       <body className={tinos.className}>
           <Header></Header>
         {children}
