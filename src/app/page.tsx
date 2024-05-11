@@ -496,9 +496,9 @@ useEffect(() => {
         </div>
       </section>
      
-    {/* <section id='instagramfeed' className='flex justify-center mx-4'>
+     <section id='instagramfeed' className='flex justify-center mx-4'>
         <InstagramFeed></InstagramFeed>
-      </section> */ }
+      </section> 
       
       <section id='contact' className='bg-gradient-to-b from-white via-gray-200 to-gray-300 h-auto lg:h-[70vh]'>
         <div className='mx-auto max-w-7xl w-11/12 '>
