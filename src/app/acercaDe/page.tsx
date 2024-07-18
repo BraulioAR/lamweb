@@ -48,22 +48,12 @@ Ahoro gozo de trabajar en esta empresa junto a mis <br></br>socias, donde desemp
 
   
     
-    <div className="bg-black lg:bg-white p-12 col-span-3 row-span-3 items-center justify-center flex py-12">
-        <h1 className={`${tinos.className} text-white lg:text-black text-2xl lg:text-[4rem] text-start leading-tight`}>Gabriella <br /> Soriano</h1>
-      </div>
-    <div className="bg-white lg:bg-black p-12 col-span-3 row-span-3 items-start ">
-        <h2 className={`${tinos.className}  text-black lg:text-white text-xl lg:text-[1.25rem] text-start`}>
-Aló?, Hi there! Mi nombre es Gabriella Soriano, (casi)<br></br> Licenciada en Comunicación Digital, con un Diplomado <br></br>en Marketing Digital y Redes Sociales. ¡Qué el título no <br></br>te confunda!, en esta empresa me encargo de convertir <br></br>cada una de las ideas en arte, de la mano de la <br></br>creatividad visual. <br></br> <br></br>
-Con más de dos años de experiencia en el área, me he <br></br>dado cuenta de que…¡Me gusta más estar detrás de la <br></br>pantalla!
-
-Como Graphic & Web Designer, busco crear una <br></br>experiencia diferente, donde nuestras marcas obtengan <br></br>las soluciones que necesitan y queden satisfechas con <br></br>nuestro trabajo. ¡Un buen servicio es una excelente <br></br>tarjeta de presentación!</h2>
-      </div>
     
-    <div className="bg-black p-12 col-span-3 row-span-3 items-center justify-center flex">
-        <h1 className={`${tinos.className}  text-white text-2xl lg:text-[4rem] text-start leading-tight `}>Jenny <br />Sánchez</h1>
+    <div className="bg-white p-12 col-span-3 row-span-3 items-center justify-center flex">
+        <h1 className={`${tinos.className}  text-black text-2xl lg:text-[4rem] text-start leading-tight `}>Jenny <br />Sánchez</h1>
       </div>
-    <div className="bg-white p-12 col-span-3 row-span-3 items-start">
-        <h2 className={`${tinos.className}  text-black text-xl lg:text-[1.25rem] text-start`}>¿Una palabra que me define? &quot;La creatividad&quot;, para <br></br>que conozcan un poco más de mi, me llamo Jenny <br></br>Sánchez, soy Licenciada en Comunicación Social, me <br></br>desempeño como Content Creator, Community <br></br>Manager y Asesora de medios Sociales.<br></br>
+    <div className="bg-black p-12 col-span-3 row-span-3 items-start">
+        <h2 className={`${tinos.className}  text-white text-xl lg:text-[1.25rem] text-start`}>¿Una palabra que me define? &quot;La creatividad&quot;, para <br></br>que conozcan un poco más de mi, me llamo Jenny <br></br>Sánchez, soy Licenciada en Comunicación Social, me <br></br>desempeño como Content Creator, Community <br></br>Manager y Asesora de medios Sociales.<br></br>
 Estudié Teatro en la Escuela Nacional de Arte <br></br>Dramático, por lo que me he desempeñado en todas las áreas de creatividad.<br></br><br></br>
 Tengo más de 3 años de experiencia trabajando para<br></br> los medios digitales.<br></br>
 ¿Artistas?, ¿Políticos?, ¿Figuras del medio?, he tenido <br></br>la oportunidad de trabajar con diferentes <br></br>personalidades, ayudando en proyección de su imagen. <br></br> Actualmente estoy feliz de trabajar en esta empresa <br></br>junto a mis socias dispuesta a llevar tu marca a otro <br></br>nivel.</h2>
