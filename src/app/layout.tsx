@@ -126,7 +126,8 @@ export default function RootLayout({ children }: { children: React.ReactNode })
           </div>
           <div className='flex justify-center'>
             <p className="flex items-center text-sm text-center">
-              &copy; 2024  Lights and Media | Developed by <a href='https://bookplaintech.com/'>Bookplain Technology</a>
+              &copy; 2024  Lights and Media | Web desarrollada por&nbsp; <a href='https://bookplaintech.com/' target="_blank"
+                rel="noopener noreferrer" className='underline'> Bookplain Technology.</a>
             </p>
           </div>
         </footer>
