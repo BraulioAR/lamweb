@@ -126,7 +126,7 @@ export default function RootLayout({ children }: { children: React.ReactNode })
           </div>
           <div className='flex justify-center'>
             <p className="flex items-center text-sm text-center">
-              &copy; 2024  Lights and Media | Developed by Braulio A. Rosario.
+              &copy; 2024  Lights and Media | Developed by <a href='https://bookplaintech.com/'>Bookplain Technology</a>
             </p>
           </div>
         </footer>
