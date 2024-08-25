@@ -5,11 +5,11 @@ import { tinos } from '../app/fonts'
 function InstagramFeed() {
   const [data, setData] = useState([]);
 
-  useEffect(() => {
+useEffect(() => {
     const fetchData = async () => {
      
       const response = await fetch(
-        "https://graph.instagram.com/me/media?fields=thumbnail_url,media_url,caption,permalink,media_type&limit=9&access_token=IGQWRQWGJYWUM1V3Y2Sjg4OEhZAa3o1TzFMdDJ0dmc2VDNKUkhFS0daOUhXT3FhV0FXMm9JVGVMNjFlWjdnbVhFQ0t4eVg5SDY2Nm9nUHRhaVk4Vm9CcnFsMjRNVUp2ZA3ptVEJOdXdPdGM4VjFsYjE1b05aWTE5aU0ZD"
+        `https://graph.instagram.com/me/media?fields=thumbnail_url,media_url,caption,permalink,media_type&limit=9&access_token=${process.env.INSTAGRAM_TOKEN}`
       );
       const json = await response.json();
       

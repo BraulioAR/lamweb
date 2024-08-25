@@ -79,9 +79,9 @@ export default function Page() {
               </figure>
               </div>
             </div>
-               <section id='instagramfeed' className='flex justify-center'>
+          {/*  <section id='instagramfeed' className='flex justify-center'>
         <InstagramFeed></InstagramFeed>
-                </section>
+                </section>*/}
                 </div>
         </section>
     )

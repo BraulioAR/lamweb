@@ -97,7 +97,7 @@ Con años en el mercado, Boho Decor es reconocida por sus <br /> decoraciones he
             </div>
             </div>
                <section id='instagramfeed' className='flex justify-center'>
-           <InstagramFeed></InstagramFeed> 
+           
       </section>
         </section>
     )

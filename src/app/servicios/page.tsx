@@ -149,7 +149,7 @@ export default function Page() {
           </div>
                 </div>
                 </section>
-        { <InstagramFeed></InstagramFeed> }
+       
         </section>
         
     )
