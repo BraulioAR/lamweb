@@ -20,7 +20,7 @@ function Header() {
             <Link href="/" className='text-gray-600 lg:px-3 py-5 cursor-pointer text-sm lg:text-lg hover:scale-105 hover:text-black transition:fill 0.3s'>Inicio</Link>
             <Link href="/contactus" className='text-gray-600 lg:px-3 py-5 cursor-pointer text-sm lg:text-lg hover:scale-105 hover:text-black transition:fill 0.3s'>Contacto</Link>
             <Link href="/acercaDe" className='text-gray-600 lg:px-3 py-5 cursor-pointer text-sm lg:text-lg hover:scale-105 hover:text-black transition:fill 0.3s'>Acerca de</Link>
-            <Link href="/servicios" className='text-gray-600 lg:px-3 py-5 cursor-pointer text-sm lg:text-lg hover:scale-105 hover:text-black transition:fill 0.3s'>Servicios</Link>
+            <Link href="/#servicios" className='text-gray-600 lg:px-3 py-5 cursor-pointer text-sm lg:text-lg hover:scale-105 hover:text-black transition:fill 0.3s'>Servicios</Link>
             <Link href="/portafolio" className='text-gray-600 lg:px-3 py-5 cursor-pointer text-sm lg:text-lg hover:scale-105 hover:text-black transition:fill 0.3s'>Portafolio</Link>
           </div>
         </div>
