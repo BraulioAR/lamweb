@@ -79,7 +79,7 @@ useEffect(() => {
      <Services/>
     <Gallery/>
     <Qualities/>
-     <section id='instagramfeed' className='flex justify-center mx-4'>
+     <section id='instagramfeed' className='flex justify-center'>
         <InstagramFeed/>
       </section> 
       
