@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -10,7 +11,7 @@ function Header() {
           <div className='hidden lg:block hover:scale-105 pt-2'>
             <Link href="/">
               <div>
-                <Image src="/header-logo.jpg" alt="LAM logo" width={85} height={52} className='w-full h-auto object-cover' />
+                <img src="/header-logo.webp" alt="LAM logo" className=' h-1/2 w-1/2 object-cover' />
               </div>
             </Link>
           </div>
@@ -19,7 +20,7 @@ function Header() {
             <Link href="/" className='text-gray-600 lg:px-3 py-5 cursor-pointer text-sm lg:text-lg hover:scale-105 hover:text-black transition:fill 0.3s'>Inicio</Link>
             <Link href="/contactus" className='text-gray-600 lg:px-3 py-5 cursor-pointer text-sm lg:text-lg hover:scale-105 hover:text-black transition:fill 0.3s'>Contacto</Link>
             <Link href="/acercaDe" className='text-gray-600 lg:px-3 py-5 cursor-pointer text-sm lg:text-lg hover:scale-105 hover:text-black transition:fill 0.3s'>Acerca de</Link>
-            <Link href="/servicios" className='text-gray-600 lg:px-3 py-5 cursor-pointer text-sm lg:text-lg hover:scale-105 hover:text-black transition:fill 0.3s'>Servicios</Link>
+            <Link href="/#servicios" className='text-gray-600 lg:px-3 py-5 cursor-pointer text-sm lg:text-lg hover:scale-105 hover:text-black transition:fill 0.3s'>Servicios</Link>
             <Link href="/portafolio" className='text-gray-600 lg:px-3 py-5 cursor-pointer text-sm lg:text-lg hover:scale-105 hover:text-black transition:fill 0.3s'>Portafolio</Link>
           </div>
         </div>
