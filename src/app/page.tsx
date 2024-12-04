@@ -456,7 +456,7 @@ useEffect(() => {
       </section>
      
      <section id='instagramfeed' className='flex justify-center mx-4'>
-       
+        <InstagramFeed/>
       </section> 
       
       <section id='contact' className='bg-gradient-to-b from-white via-gray-200 to-gray-300 h-auto lg:h-[70vh]'>
@@ -509,7 +509,6 @@ useEffect(() => {
           </div>
         </div>
       </section>
-     
     </main>
 
     

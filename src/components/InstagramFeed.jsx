@@ -1,19 +1,25 @@
 import { useState, useEffect } from "react";
-import { tinos } from '../app/fonts'
-
+import { tinos } from "../app/fonts";
 
 function InstagramFeed() {
   const [data, setData] = useState([]);
 
-useEffect(() => {
+  useEffect(() => {
     const fetchData = async () => {
-     
-      const response = await fetch(
-        `https://graph.instagram.com/me/media?fields=thumbnail_url,media_url,caption,permalink,media_type&limit=9&access_token=${process.env.INSTAGRAM_TOKEN}`
-      );
-      const json = await response.json();
-      
-      setData(json?.data);
+      try {
+        const response = await fetch(
+          `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink&limit=9&access_token=${process.env.NEXT_PUBLIC_INSTAGRAM_TOKEN}`
+        );
+        const json = await response.json();
+
+        if (json?.data) {
+          setData(json.data);
+        } else {
+          console.error("Error fetching Instagram data:", json);
+        }
+      } catch (error) {
+        console.error("Error fetching Instagram API:", error);
+      }
     };
 
     fetchData();
@@ -50,11 +56,8 @@ useEffect(() => {
           </article>
         );
       })}
-      <div></div>
     </div>
-    
   );
 }
 
 export default InstagramFeed;
-
