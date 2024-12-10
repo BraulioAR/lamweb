@@ -62,7 +62,7 @@ useEffect(() => {
     <main>
       <Hero/>
       <section className="relative flex justify-center h-[80vh]">
-        <video className='absolute top-0 left-0 w-full h-full object-cover z-0' autoPlay muted loop playsInline>
+        <video className='absolute top-0 left-0 w-full h-full object-cover z-0 blur-sm' autoPlay muted loop playsInline>
           <source src='/file.mp4' type='video/mp4'></source>
         </video>
         <div className='mx-auto max-w-7xl z-10 flex items-center justify-center'>

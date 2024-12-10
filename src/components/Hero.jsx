@@ -2,7 +2,7 @@
 function Hero() {
   return (
     <section id='home' className="flex flex-row h-[80vh] w-full">
-        <video className='absolute top-30 left-0 w-full h-full object-cover z-0' autoPlay muted loop playsInline>
+        <video className='absolute top-30 left-0 w-full h-full object-cover z-0 blur-sm' autoPlay muted loop playsInline>
           <source src='/file1.mp4' type='video/mp4'></source>
         </video>
         <div className='mx-auto max-w-7xl w-11/12 z-10'>
