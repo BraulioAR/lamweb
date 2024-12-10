@@ -9,7 +9,7 @@ export default function Page() {
      
     <div className="col-span-4">
         <Image
-                            src='/img-about.webp'
+                            src='/team-about-us.webp'
                             alt='Acerca de'
                             width={1200}
                         height={1061}
