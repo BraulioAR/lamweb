@@ -16,7 +16,7 @@ interface MyMetadata extends Metadata {
 
 
 export const metadata: MyMetadata = {
-  title: 'Lights and Media: Social Media Agency | Marketing Digital | Fotografía Profesional | Publicidad Online  | Estrategias Digitales',
+  title: 'Lights and Media: Social Media Agency en República Dominicana | Marketing Digital | Fotografía Profesional | Publicidad Online  | Estrategias Digitales',
   description: 'Lights and Media es una agencia especializada en manejo de redes sociales, marketing digital, fotografía profesional, publicidad online y estrategias digitales para marcas.',
   extra: {
     keywords: 'Social Media Agency, Manejo de Redes Sociales, Marketing Digital, Fotografía Profesional, Publicidad Online, Estrategia Digital, Branding Digital, Marketing de Influencers, Anuncios en Redes Sociales, Posicionamiento en Redes Sociales, Estrategias de Engagement, Marketing de Contenidos, Campañas Publicitarias Digitales, Consultoría en Redes Sociales',
