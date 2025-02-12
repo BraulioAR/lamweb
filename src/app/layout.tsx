@@ -6,9 +6,6 @@ import Link from 'next/link'
 import { tinos } from './fonts'
 import Image from 'next/image'
 import Head from 'next/head';
-import { GoogleAnalytics } from '@next/third-parties/google'
-
-
 import  Header  from '../components/Header'
 
 interface MyMetadata extends Metadata {
@@ -132,7 +129,6 @@ export default function RootLayout({ children }: { children: React.ReactNode })
           </div>
         </footer>
       </body>
-       <GoogleAnalytics gaId="G-H174TDP3D9" />
     </html>
   )
 }
