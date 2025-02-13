@@ -1,0 +1,14 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /admin
+Disallow: /private
+
+# Host
+Host: https://www.lighstandmedia.com.do
+
+# Sitemaps
+Sitemap: https://www.lighstandmedia.com.do/sitemap.xml
