@@ -1,5 +1,5 @@
+'use client'
 import { useState, useEffect } from "react";
-import { tinos } from "../app/fonts";
 
 function InstagramFeed() {
   const [data, setData] = useState([]);
@@ -26,7 +26,7 @@ function InstagramFeed() {
   }, []);
 
   return (
-    <div className="feed">
+    <div className="feed lg:mx-56">
       {data.map((p) => {
         const { id, media_url, caption, media_type, permalink } = p;
 
@@ -34,7 +34,7 @@ function InstagramFeed() {
           <article key={id}>
           
             <div className="grid h-[25vh] lg:h-full">
-					<figure className="effect-layla">
+					<figure className="effect-layla rounded-lg">
 						{media_type === 'IMAGE' || media_type === 'CAROUSEL_ALBUM' ? (
              
                       // eslint-disable-next-line @next/next/no-img-element
@@ -47,7 +47,7 @@ function InstagramFeed() {
               </video>
             ) : null}
 						<figcaption className='flex justify-center items-center overflow-visible'>
-                    <p className={`${tinos.className} text-black font-bold text-lg text-center hidden lg:block `}>{caption}</p>
+                    <p className={`text-black font-bold text-lg text-center hidden lg:block `}>{caption}</p>
                     <a href={permalink} target="_blank" rel="noopener noreferrer"></a>
 						</figcaption>			
               </figure>
