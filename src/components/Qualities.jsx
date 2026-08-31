@@ -7,7 +7,7 @@ function Qualities() {
     <section id='cualidades' className='bg-black pb-48 w-full'>
         <div className='pt-12 pb-20 mx-20'>
           <div className='flex justify-start items-start '>
-            <h1 className={`${tinos.className} text-start text-white text-5xl lg:text-[3.5rem]`}>Cualidades según nuestros clientes</h1>
+            <h2 className={`${tinos.className} text-start text-white text-4xl lg:text-[3rem]`}>Cualidades según nuestros clientes</h2>
             </div>
             </div>
         <div className=' mx-auto max-w-6xl w-11/12'>

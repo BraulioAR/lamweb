@@ -6,7 +6,7 @@ function Gallery() {
   return (
      <section id='inspiracion' className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-300 via-blue-100 to-white h-full'>
           <div className='flex justify-center items-center py-12 mx-auto'>
-            <h1 className={`${tinos.className} text-center text-black text-5xl lg:text-[5rem]`}>Por si necesitas <br/>inspiración para tu <br/> contenido...</h1>
+            <h2 className={`${tinos.className} text-center text-black text-4xl lg:text-[3.75rem]`}>Inspiración para tu contenido</h2>
           </div>
           <div className="grid lg:grid-cols-3 grid-cols-1 h-[275vh] w-full pl-5 lg:px-5">
        <GalleryItem img="bg-insp"/>

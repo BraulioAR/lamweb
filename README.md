@@ -1,4 +1,8 @@
+# lightsandmedia.com.do
+Web de Light and Media
+
 Lights and Media is an agency specialized in social media management, digital marketing, professional photography, online advertising, and digital strategies for brands.
 The client's goal for the project was to have a modern, professional website that effectively showcased their services in social media management, digital marketing, professional photography, online advertising, and digital brand strategies. They wanted the website to reflect their expertise and attract potential clients looking for these services.
+
 I single-handedly created the website for Lights and Media from scratch using Next.js, Tailwind CSS, HTML, CSS, and Node.js. My contributions included designing the layout, implementing responsive design for various devices, integrating animations for a more engaging user experience, and ensuring the website was optimized for search engines (SEO). I also integrated contact forms and social media links to enhance user interaction and facilitate communication with the agency.
 The website I created for Lights and Media successfully met the client's goals and exceeded their expectations. The modern design, user-friendly interface, and informative content helped establish Lights and Media as a reputable agency in their field. The website received positive feedback from clients and visitors, resulting in increased traffic and inquiries. Overall, the project was a success in enhancing Lights and Media's online presence and attracting new business opportunities.

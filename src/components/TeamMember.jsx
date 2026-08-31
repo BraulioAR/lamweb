@@ -16,12 +16,12 @@ function TeamMember({img,alt, name, desc, children}) {
               <div className='flex flex-col px-8'>
 
                 <div className='flex flex-col gap-4'>
-                <h2 className={`${tinos.className} font-bold text-black text-[1.5rem]`}>{name}</h2>
+                <h3 className={`${tinos.className} font-bold text-black text-[1.5rem]`}>{name}</h3>
 
-                  <h3 className={`${tinos.className} text-black text-[1rem] mt-[-0.5rem]`}>{desc}</h3>
+                  <p className={`${tinos.className} text-black text-[1rem] mt-[-0.5rem]`}>{desc}</p>
                 </div>
                 <div className='mt-8 '>
-                  <h3 className={`${tinos.className} text-black text-[1rem] leading-6`}>{children}</h3>
+                  <p className={`${tinos.className} text-black text-[1rem] leading-6`}>{children}</p>
                 </div>
               </div>
               <div className='flex flex-row gap-4 ml-7 mt-3'>

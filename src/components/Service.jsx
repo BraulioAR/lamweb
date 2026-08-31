@@ -14,9 +14,11 @@ function Service({img,alt,buttonText}) {
                     className='rounded-[10rem]'
                   />
                   <div className='flex items-center justify-center pt-7'>
-                    <Link href="#contact">
-                      <button className={`${tinos.className} border-2 text-blue-500 border-blue-600 text-lg px-3 font-bold hover:scale-105`}>{buttonText}</button>
-                    </Link>
+                    <h3>
+                      <Link href="#contact" className={`${tinos.className} inline-block border-2 text-blue-500 border-blue-600 text-lg px-3 py-1 font-bold hover:scale-105`}>
+                        {buttonText}
+                      </Link>
+                    </h3>
                   </div>
                 </div>
     </div>
